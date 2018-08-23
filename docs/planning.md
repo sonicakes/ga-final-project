@@ -16,12 +16,12 @@ Customer can view different tours, filter tours (search), book, pay.
 ### Admins
 - Admins create tours, send out email notifications.
 - Allow admins to add testimonies from clients
-- Online query form that saves it to admin, he can view and reply. CAPTHA before user sends a question.
+- Online query form that saves it to admin, he can view and reply. CAPTCHA before user sends a question.
 ## Functionality
 
 ### Booking Holidays or Tours
 - before booking, show info / warning about visa
-- customer logs in after choosing a tour, then pro
+- customer logs in after choosing a tour, then proceed to payment
 
 
 ### Taking a deposit payment
@@ -49,11 +49,11 @@ send out automatic confirmation to users
 - We show a map of the area they will visit.
 - We should have a table showing were each tour will for how many nights:
 
-Tour 1 - Taste of Russia
+Tour 1 - Best of Russia
 Day 1 - Moscow
-Day 2 - Moscow
+Day 2 - Lipetsk
 Day 3 - Moscow
-Day 4 - St Petersburg
+Day 4 - Voronezh
 Day 4 - St Petersburg
 
 Tour 2 -

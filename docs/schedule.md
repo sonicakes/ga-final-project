@@ -3,7 +3,7 @@ Fri    24th
 No coding.
 Draw wireframes for views, using previous projects for inspiration.
 
-Research email notifications using ruby
+Research email notifications using ruby (NOT SendGrid)
 
 Sat    25th
 ========
