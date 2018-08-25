@@ -42,6 +42,7 @@ end
 
   describe "Associations" do
     it { should have_many :tour_days }
+    it { should have_many :bookings }
   end
 
 end
