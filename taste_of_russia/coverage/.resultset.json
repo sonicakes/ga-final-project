@@ -262,13 +262,30 @@
         1,
         null,
         1,
+        null,
         1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
         null,
         null,
         null
       ],
       "/Users/sparker/Projects/ga-final-project/taste_of_russia/app/controllers/customers_controller.rb": [
         1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/sparker/Projects/ga-final-project/taste_of_russia/spec/controllers/pages_controller_spec.rb": [
@@ -313,24 +330,46 @@
         null,
         1,
         1,
+        null,
+        1,
         1,
         null,
         null,
         1,
         1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
         null,
         null
       ],
       "/Users/sparker/Projects/ga-final-project/taste_of_russia/app/controllers/tours_controller.rb": [
         1,
+        1,
+        1,
         null,
         null,
+        1,
+        1,
         null,
         null
       ],
-      "/Users/sparker/Projects/ga-final-project/taste_of_russia/app/models/tour.rb": [
-        1,
-        1,
+      "/Users/sparker/Projects/ga-final-project/taste_of_russia/app/models/customer.rb": [
         1,
         1,
         1,
@@ -341,8 +380,17 @@
         1,
         1,
         null
+      ],
+      "/Users/sparker/Projects/ga-final-project/taste_of_russia/app/models/tour.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
       ]
     },
-    "timestamp": 1535187789
+    "timestamp": 1535190575
   }
 }
