@@ -1,7 +1,47 @@
 require 'rails_helper'
 
 RSpec.describe Customer, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+    subject {
+      described_class.new(
+        first_name: "Rowik",
+        last_name: 'Boikov',
+        phone_number: "123456",
+        email: "test@example.com",
+        password_digest: "chicken"
+      )
+    }
+
+    it 'is valid with valid attributes' do
+      expect(subject).to be_valid
+    end
+
+    it 'is not valid without first name' do
+       subject.first_name = nil
+      expect(subject).to_not be_valid
+    end
+
+    it 'is not valid without a last name' do
+       subject.last_name = nil
+      expect(subject).to_not be_valid
+    end
+
+    it 'is not valid without password' do
+       subject.password_digest = nil
+      expect(subject).to_not be_valid
+    end
+
+    it 'is not valid without an email' do
+       subject.email = nil
+      expect(subject).to_not be_valid
+    end
+
+    it 'is not valid without phone number' do
+       subject.phone_number = nil
+      expect(subject).to_not be_valid
+    end
+
+
 end
 
 # email should be present

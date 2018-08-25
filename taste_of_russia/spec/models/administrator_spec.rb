@@ -1,7 +1,39 @@
 require 'rails_helper'
 
 RSpec.describe Administrator, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  subject {
+    described_class.new(
+      first_name: "Rowik",
+      last_name: 'Boikov',
+      email: "test@example.com",
+      password_digest: "chicken"
+    )
+  }
+
+  it 'is valid with valid attributes' do
+    expect(subject).to be_valid
+  end
+
+  it 'is not valid without first name' do
+     subject.first_name = nil
+    expect(subject).to_not be_valid
+  end
+
+  it 'is not valid without a last name' do
+     subject.last_name = nil
+    expect(subject).to_not be_valid
+  end
+
+  it 'is not valid without password' do
+     subject.password_digest = nil
+    expect(subject).to_not be_valid
+  end
+
+  it 'is not valid without an email' do
+     subject.email = nil
+    expect(subject).to_not be_valid
+  end
+
 end
 # should have email
 # should have first and lsat name
