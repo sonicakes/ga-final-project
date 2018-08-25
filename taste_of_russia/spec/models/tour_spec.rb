@@ -1,47 +1,42 @@
 require 'rails_helper'
 
 RSpec.describe Tour, type: :model do
-  it "is valid with valid attributes" do
-    tour = Tour.new
-    tour.title = "Moscow to Lipetsk"
-    tour.description = "A nice trip from Moscow to Lipetsk"
-    tour.price = 2000
-    expect(tour).to be_valid
+
+  subject {
+    described_class.new(
+      title: "Moscow to Lipetsk",
+      description: "A nice trip from Moscow to Lipetsk",
+      price: 2000
+    )
+  }
+
+  it 'is valid with valid attributes' do
+    expect(subject).to be_valid
   end
 
-  it "is not valid without a title" do
-    tour = Tour.new
-    #tour.title = "Moscow to Lipetsk"
-    tour.description = "A nice trip from Moscow to Lipetsk"
-    tour.price = 2000
-    expect(tour).to_not be_valid
+  it 'is not valid without a title' do
+    subject.title = nil
+    expect(subject).to_not be_valid
   end
 
-  it "is not valid without a description" do
-    tour = Tour.new
-    tour.title = "Moscow to Lipetsk"
-    #tour.description = "A nice trip from Moscow to Lipetsk"
-    tour.price = 2000
-    expect(tour).to_not be_valid
+  it 'is not valid without a description' do
+    subject.description = nil
+    expect(subject).to_not be_valid
   end
 
-  it "is not valid without a price" do
-      tour = Tour.new
-      tour.title = "Moscow to Lipetsk"
-      tour.description = "A nice trip from Moscow to Lipetsk"
-      #tour.price = 2000
-      expect(tour).to_not be_valid
+  it 'is not valid without a price' do
+    subject.price = nil
+    expect(subject).to_not be_valid
   end
 
-    # description not longer than 200
-  it "is not valid without a price" do
-      tour = Tour.new
-      tour.title = "Moscow to Lipetsk"
-      tour.description = "A nice trip from Moscow to Lipetsk"
-      #tour.price = 2000
-      expect(tour).to_not be_valid
+  it 'is not valid when price is less than 500' do
+    subject.price = 250
+    expect(subject).to_not be_valid
   end
 
-  # description not longer than 200
-  # price greater than 50
+  it 'is not valid when a description is longer than 200 characters' do
+    subject.description = 'A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk.'
+    expect(subject).to_not be_valid
+  end
+
 end
