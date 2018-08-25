@@ -9,7 +9,7 @@ RSpec.describe Tour, type: :model do
       price: 2000
     )
   }
-
+  describe "Validations" do
   it 'is valid with valid attributes' do
     expect(subject).to be_valid
   end
@@ -37,6 +37,11 @@ RSpec.describe Tour, type: :model do
   it 'is not valid when a description is longer than 200 characters' do
     subject.description = 'A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk.'
     expect(subject).to_not be_valid
+  end
+end
+
+  describe "Associations" do
+    it { should have_many :tour_days }
   end
 
 end

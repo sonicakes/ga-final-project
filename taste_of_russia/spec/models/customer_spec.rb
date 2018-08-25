@@ -11,7 +11,7 @@ RSpec.describe Customer, type: :model do
         password_digest: "chicken"
       )
     }
-
+    describe "Validations" do
     it 'is valid with valid attributes' do
       expect(subject).to be_valid
     end
@@ -40,7 +40,11 @@ RSpec.describe Customer, type: :model do
        subject.phone_number = nil
       expect(subject).to_not be_valid
     end
+end
 
+describe "Associations" do
+    it { should have_many :bookings }
+end
 
 end
 

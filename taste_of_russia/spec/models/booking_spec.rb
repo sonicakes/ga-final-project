@@ -1,13 +1,30 @@
 require 'rails_helper'
 
 RSpec.describe Booking, type: :model do
+
+  let(:tour) { Tour.new(
+    :title => "Moscow to Lipetsk",
+    :description => "A nice trip from Moscow to Lipetsk",
+    :price => 2000
+  )}
+  let(:customer) { Customer.new(
+    :first_name => "Rowik",
+    :last_name => 'Boikov',
+    :phone_number => "123456",
+    :email => "test@example.com",
+    :password_digest => "chicken"
+  )}
+
   subject {
     described_class.new(
       payment_reference: "12345",
-      start_date: '2018-09-24'
+      start_date: '2018-09-24',
+      tour: tour,
+      customer: customer
     )
   }
 
+  describe "Validations" do
   it 'is valid with valid attributes' do
     expect(subject).to be_valid
   end
@@ -21,6 +38,13 @@ RSpec.describe Booking, type: :model do
      subject.start_date = nil
     expect(subject).to_not be_valid
   end
+end
+
+describe "Associations" do
+  it { should belong_to :customer }
+  it { should belong_to :tour }
+  it { should have_many :booking_people }
+end
 
 end
 #tour id should be present
