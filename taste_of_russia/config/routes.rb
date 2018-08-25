@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   resources :customers
   resources :bookings
   resources :tours
-  resources :bookings
 
   get '/login' => 'session#new'         # This will be our sign-in page.
   post '/login' => 'session#create'     # This will be the path to which the sign-in form is posted
