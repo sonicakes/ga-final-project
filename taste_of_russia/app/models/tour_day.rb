@@ -1,0 +1,2 @@
+class TourDay < ApplicationRecord
+end
