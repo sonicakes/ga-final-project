@@ -27,3 +27,6 @@ Test for session controller
 ## Sun 26 Aug 2:20 pm
 Install stripe gem, create basic HTML views (without styling) to confirm functionality I created using tests.
 If I find any problems while making views, I will go back and write for it first.
+
+## Sun 26 Aug 2.50 pm
+Continue writing views

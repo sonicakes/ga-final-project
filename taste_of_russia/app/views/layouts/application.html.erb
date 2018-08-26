@@ -7,9 +7,73 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
   </head>
 
   <body>
-    <%= yield %>
+
+    <nav class="navbar navbar-expand-sm navbar-dark text-white bg-dark" style="background-color:#000066 !important;">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav mr-auto">
+             <li class="nav-item">
+               <%= link_to 'All Holidays', holidays_path, class: "nav-link" %>
+             </li>
+             <li class="nav-item">
+               <%= link_to 'New Holiday', new_holiday_path, class: "nav-link" %>
+             </li>
+           </ul>
+           <ul class="navbar-nav">
+             <% if @current_user.present? %>
+               <li class="nav-item">
+                 <%= link_to "Log out #{ @current_user.name }", login_path, :method => 'delete', class: "nav-link" %>
+
+
+               </li>
+             <% else %>
+               <li class="nav-item">
+                 <%= link_to new_user_path, class: "nav-link text-white" do %>
+                   <i class="fas fa-user-plus"></i> Sign Up
+                 <% end %>
+               </li>
+               <li class="nav-item">
+                 <%= link_to login_path, class: "nav-link text-white" do %>
+                   <i class="fas fa-sign-in-alt"></i> Log In
+                 <% end %>
+               </li>
+             <% end %>
+           </ul>
+         </div>
+       </nav>
+
+       <div class="container">
+         <div class="row my-2">
+           <div class="col-12 col-md-6 mx-auto">
+             <% if flash[:success] %>
+               <div class="alert-success alert">
+                 <%= flash[:success]%>
+               </div>
+             <% end %>
+             <% if flash[:notice] %>
+               <div class="alert-info alert">
+                 <%= flash[:notice]%>
+               </div>
+             <% end %>
+             <% if flash[:error] %>
+               <div class="alert-danger alert">
+                 <%= flash[:error]%>
+               </div>
+             <% end %>
+           </div>
+         </div>
+       </div>
+       <%= yield %>
+       <div class="footer fixed-bottom mt-4 p-2 bg-dark text-white text-center" style="background-color:#000066 !important;">
+         Copyright @sonicakes 2018
+       </div>
   </body>
 </html>

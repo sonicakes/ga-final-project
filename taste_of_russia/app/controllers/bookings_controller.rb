@@ -58,8 +58,11 @@ class BookingsController < ApplicationController
    unless booking.save
       redirect_to new_booking_url and return
    end
-  #we now saved the booking, we now need to add Booking People to the booking.
 
+  # TODO we now saved the booking, we now need to add Booking People to the booking.
+
+   # Process Stripe payment
+   
 
    redirect_to booking
 
