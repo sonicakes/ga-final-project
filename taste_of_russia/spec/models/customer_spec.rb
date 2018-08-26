@@ -1,54 +1,34 @@
 require 'rails_helper'
 
 RSpec.describe Customer, type: :model do
-
-    subject {
-      described_class.new(
-        first_name: "Rowik",
-        last_name: 'Boikov',
-        phone_number: "123456",
-        email: "test@example.com",
-        password_digest: "chicken"
-      )
-    }
-    describe "Validations" do
+  subject do
+    described_class.new(
+      email: 'test@example.com',
+      password_digest: 'chicken'
+    )
+  end
+  describe 'Validations' do
     it 'is valid with valid attributes' do
       expect(subject).to be_valid
     end
 
-    it 'is not valid without first name' do
-       subject.first_name = nil
-      expect(subject).to_not be_valid
-    end
-
-    it 'is not valid without a last name' do
-       subject.last_name = nil
-      expect(subject).to_not be_valid
-    end
-
     it 'is not valid without password' do
-       subject.password_digest = nil
+      subject.password_digest = nil
       expect(subject).to_not be_valid
     end
 
     it 'is not valid without an email' do
-       subject.email = nil
+      subject.email = nil
       expect(subject).to_not be_valid
     end
+  end
 
-    it 'is not valid without phone number' do
-       subject.phone_number = nil
-      expect(subject).to_not be_valid
-    end
-end
-
-describe "Associations" do
+  describe 'Associations' do
     it { should have_many :bookings }
-end
-
+  end
 end
 
 # email should be present
-#first name should be present
+# first name should be present
 # lsat name should be present
 # phone number should be present

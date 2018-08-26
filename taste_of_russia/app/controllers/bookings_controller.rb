@@ -28,17 +28,19 @@ class BookingsController < ApplicationController
      # If we can't save the new customer, then we redirect back to the booking
      # new page, immediately.
 
+     customerPassword = SecureRandom.hex(8)
+
      customer = Customer.new
-     customer.first_name = params[:customer_first_name]
-     customer.last_name = params[:customer_last_name]
-     customer.email = params[:customer_email]
-     customer.password = params[:customer_password]
-     customer.phone_number = params[:customer_phone_number]
+     customer.email = params[:stripeEmail]
+     customer.password = customerPassword
 
      unless customer.save
-     flash[:error] = "Sorry, we could not save your customer details."
-        redirect_to new_booking_url(:tour_id => params[:tour_id]) and return
+       flash[:error] = "Sorry, we could not save your customer details."
+       redirect_to new_booking_url(:tour_id => params[:tour_id]) and return
      end
+
+     # Now that we have saved the customer, we set that customer as logged in
+     session[:customer_id] = customer.id
 
      #is the customer logged in?
      #if not, make a customer object using details they send in a form
@@ -54,17 +56,18 @@ class BookingsController < ApplicationController
    booking.start_date = params[:start_date]
    booking.tour_id = params[:tour_id]
    booking.customer_id = customer.id
+   booking.payment_reference = params[:stripeToken]
 
    unless booking.save
-
-      redirect_to new_booking_url and return
+     flash[:error] = "Sorry, we could not save your booking details."
+     redirect_to new_booking_url and return
    end
 
   # TODO we now saved the booking, we now need to add Booking People to the booking.
 
    # Process Stripe payment
 
-
+   flash[:success] = "Thank you for booking. Your booking ID is #{booking.id}."
    redirect_to booking
 
  end

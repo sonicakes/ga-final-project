@@ -18,10 +18,7 @@ RSpec.describe SessionController, type: :controller do
 
         customer = Customer.create(
           :password => "12345",
-          :first_name => "alice",
-          :email => "alice@example.com",
-          :last_name => "Smith",
-          :phone_number => "12-34-56"
+          :email => "alice@example.com"
         )
 
         post :create, :params => {

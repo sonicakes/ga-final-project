@@ -5,10 +5,7 @@ RSpec.describe CustomersController, type: :controller do
     before do
       customer = Customer.create(
         password: 'bob12345',
-        first_name: 'Robert',
-        email: 'bob-smith@example.com',
-        last_name: 'Smith',
-        phone_number: '12-34-56'
+        email: 'bob-smith@example.com'
       )
       get(:show,
         params: { id: customer.id },

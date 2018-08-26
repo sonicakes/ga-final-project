@@ -8,9 +8,6 @@ RSpec.describe Booking, type: :model do
     :price => 2000
   )}
   let(:customer) { Customer.new(
-    :first_name => "Rowik",
-    :last_name => 'Boikov',
-    :phone_number => "123456",
     :email => "test@example.com",
     :password_digest => "chicken"
   )}

@@ -8,17 +8,11 @@ BookingPerson.destroy_all
 
 customer1 = Customer.create(
   :password => "bob12345",
-  :first_name => "Robert",
-  :email => "bob-smith@example.com",
-  :last_name => "Smith",
-  :phone_number => "12-34-56"
+  :email => "bob-smith@example.com"
 )
 customer2 = Customer.create(
   :password => "sheila12345",
-  :first_name => "Sheila",
   :email => "sheila-dutch@example.com",
-  :last_name => "Dutch",
-  :phone_number => "78-90-12"
 )
 
 # Seed Administrators

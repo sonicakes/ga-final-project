@@ -44,10 +44,7 @@ RSpec.describe BookingsController, type: :controller do
 
       customer = Customer.create(
         password: 'bob12345',
-        first_name: 'Robert',
-        email: 'bob-smith@example.com',
-        last_name: 'Smith',
-        phone_number: '12-34-56'
+        email: 'bob-smith@example.com'
       )
 
       booking = Booking.create(
@@ -80,9 +77,6 @@ RSpec.describe BookingsController, type: :controller do
         post :create, params: {
           tour_id: tour,
           start_date: '2018-09-24',
-          customer_first_name: 'Rowik',
-          customer_last_name: 'Boikov',
-          customer_phone_number: '123456',
           customer_email: 'test@example.com',
           customer_password: 'chicken'
         }
@@ -110,9 +104,6 @@ RSpec.describe BookingsController, type: :controller do
         post :create, params: {
           tour_id: tour,
           start_date: '2018-09-24',
-          customer_first_name: 'Rowik',
-          customer_last_name: 'Boikov',
-          customer_phone_number: '123456',
           customer_email: 'test@example.com',
           customer_password: 'chicken'
         }
@@ -140,9 +131,6 @@ RSpec.describe BookingsController, type: :controller do
         post :create, params: {
           tour_id: tour,
           start_date: '2018-09-24',
-          customer_first_name: '',
-          customer_last_name: '',
-          customer_phone_number: '',
           customer_email: '',
           customer_password: ''
         }
