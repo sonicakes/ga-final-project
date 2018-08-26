@@ -38,3 +38,7 @@ Next task is writing booking form with Stripe component
 ## Mon 27 Aug 8.15 am 
 Started styling All tours page, realised that my navbar is not visible and i'll have to set up a background image for All Tour and probably other pages so that navbar scrollis consistent.
 
+## Mon 27 Aug, 8.50 am
+Decided on making list of tours as a Bootstrap table. Need to add image row to Tour table to display in the tours# index list. Background is Russian pattern.
+
+
