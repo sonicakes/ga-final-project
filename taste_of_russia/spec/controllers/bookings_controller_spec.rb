@@ -72,6 +72,9 @@ end
 
   describe "POST create" do
 
+    describe 'A booking with an existing customer and successful payment'
+    describe 'A booking with an existing customer and payment fails'
+
     describe 'A booking with a new customer and successful payment' do
 
       before do
@@ -128,7 +131,7 @@ end
       # thanks for booking, but we couldn't process your payment...
     end
 
-    describe 'A booking with a new user, but customer fields are empty' do
+    describe 'A booking with a new customer, but customer fields are empty' do
 
       before do
 

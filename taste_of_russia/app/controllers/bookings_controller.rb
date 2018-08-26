@@ -1,5 +1,6 @@
 class BookingsController < ApplicationController
   def index
+    authorize_customer
     @bookings = Booking.all
   end
 
@@ -9,6 +10,7 @@ class BookingsController < ApplicationController
    end
 
    def show
+     authorize_customer
     @booking = Booking.find params[:id]
    end
 
