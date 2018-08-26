@@ -1,14 +1,57 @@
-<p class="text-center">Welcome to Taste of Russia!</p>
-
-<h1>About</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 
-<h2>Featured Tours</h2>
+      <!-- Landing img and info -->
+<div id="landing">
+  <div class="overlay">
+  <div class="container">
+    <div class="row mt-5">
+    <div class="col p-2 text-light text-center" style="margin-top:25%;">
+    <h1 class="text-center display-1" style="font-family:'RussianLand'; color:rgb(237, 28, 36); ">Taste of Russia</h1>
+    <img src="/assets/spoonie.png" class="img-fluid">
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<!-- About section -->
+    <div id="about-content" class="bg-light text-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 py-5 px-3">
+            <h3 class="text-center p-3"><strong>About</strong></h3>
+        <p class="text-justify">Lorem Khaled Ipsum is a major key to success. Learning is cool, but knowing is better, and I know the key to success. Bless up. Look at the sunset, life is amazing, life is beautiful, life is what you make it. Another one. They will try to close the door on you, just open it. Surround yourself with angels. The key to more success is to get a massage once a week, very important, major key, cloth talk. Lion! I’m up to something. They will try to close the door on you, just open it. Every chance I get, I water the plants, Lion!</p>
+
+<p>Let’s see what Chef Dee got that they don’t want us to eat. Bless up. Don’t ever play yourself. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast. Wraith talk. Stay focused. The key is to enjoy life, because they don’t want you to enjoy life. I promise you, they don’t want you to jetski, they don’t want you to smile. The first of the month is coming, we have to get money, we have no choice. It cost money to eat and they don’t want you to eat.</p>
+
+    </div>
+
+          <div class="col-md-4 mx-auto">
+            <img src="img/samovar.jpg" class="img-fluid rounded-circle pl-3 py-5">
+        </div>
+      </div>
+      <!-- Button "back to top" -->
+<div class="row">
+  <div class="col">
+    <div id="topButton" style="position: fixed; display:none; bottom: 0px; right: 0px;"><a style="color:#CC0000;"href="#landing"><i class="fa fa-3x fa-chevron-circle-up" aria-hidden="true"></i></a></div>
+  </div>
+</div>
+
+
+    </div>
+  </div> <!--end About section-->
+
+  <p class="text-center">Welcome to Taste of Russia!</p>
+
+  <h1>About</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+  <h2>Featured Tours</h2>
 
 
 
 
-      <% @tours.each do |tour| %>
-      <%= link_to tour.title, tour %>
-      <% end %>
+        <% @tours.each do |tour| %>
+        <%= link_to tour.title, tour %>
+        <% end %>
