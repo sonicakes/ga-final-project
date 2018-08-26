@@ -1,7 +1,7 @@
 # Pomodoro Log
 
 I am trying work on my project in Pomodoro sessions.
-To prevent myself from burning.
+To prevent myself from burning out.
 Unless noted differently, each session below is 25 minutes, with at least 5 minute break before next session.
 
 ## Sat 25 Aug 4.50 pm
@@ -30,3 +30,7 @@ If I find any problems while making views, I will go back and write for it first
 
 ## Sun 26 Aug 2.50 pm
 Continue writing views
+
+## Sund 26 Aug 3:25 pm
+Still writing basic views. Using bootstrap styles for laying out, but will improve later.
+Next task is writing booking form with Stripe component

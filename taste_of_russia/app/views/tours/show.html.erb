@@ -1,5 +1,12 @@
-all the info about the tour
+<%= link_to "Go Back", tours_path, class: 'btn btn-sm btn-info' %>
 
+<h1 class="text-dark display-3">
+  <strong><%= @tour.title %></strong>
+</h1>
+<h2 class="text-dark"><%= @tour.price%></h2>
+<p><%= @tour.description %>
+</p>
 
-a button to book now
-with ?tour_id = this tour
+<%= link_to "Book this Tour", new_booking_path(:tour_id => @tour.id), class: 'form_button' %>
+
+<!-- a button to book now with ?tour_id = this tour -->

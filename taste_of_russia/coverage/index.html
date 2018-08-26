@@ -14,26 +14,26 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-08-26T14:36:07+10:00">2018-08-26T14:36:07+10:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-08-26T15:48:12+10:00">2018-08-26T15:48:12+10:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">98.36%</span></span>
+    (<span class="covered_percent"><span class="green">98.37%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.27
+         1.32
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>34</b> files in total.
-    <b>183</b> relevant lines. 
-    <span class="green"><b>180</b> lines covered</span> and
+    <b>184</b> relevant lines. 
+    <span class="green"><b>181</b> lines covered</span> and
     <span class="red"><b>3</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -62,12 +62,12 @@
       
       <tr>
         <td class="strong"><a href="#1a5ca667f8149bf30382bd4d9c2003f2bca94251" class="src_link" title="app/controllers/bookings_controller.rb">app/controllers/bookings_controller.rb</a></td>
-        <td class="green strong">96.15 %</td>
-        <td>69</td>
+        <td class="green strong">96.3 %</td>
+        <td>74</td>
+        <td>27</td>
         <td>26</td>
-        <td>25</td>
         <td>1</td>
-        <td>2.7</td>
+        <td>3.0</td>
       </tr>
       
       <tr>
@@ -590,10 +590,10 @@
         <div class="source_table" id="1a5ca667f8149bf30382bd4d9c2003f2bca94251">
   <div class="header">
     <h3>app/controllers/bookings_controller.rb</h3>
-    <h4><span class="green">96.15 %</span> covered</h4>
+    <h4><span class="green">96.3 %</span> covered</h4>
     <div>
-      <b>26</b> relevant lines. 
-      <span class="green"><b>25</b> lines covered</span> and
+      <b>27</b> relevant lines. 
+      <span class="green"><b>26</b> lines covered</span> and
       <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
@@ -787,38 +787,38 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="32">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="32">
+          <span class="hits">6</span>
           
           <code class="ruby">     customer = Customer.new</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="33">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="33">
+          <span class="hits">6</span>
           
           <code class="ruby">     customer.first_name = params[:customer_first_name]</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="34">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="34">
+          <span class="hits">6</span>
           
           <code class="ruby">     customer.last_name = params[:customer_last_name]</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="35">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="35">
+          <span class="hits">6</span>
           
           <code class="ruby">     customer.email = params[:customer_email]</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="36">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="36">
+          <span class="hits">6</span>
           
           <code class="ruby">     customer.password = params[:customer_password]</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="37">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="37">
+          <span class="hits">6</span>
           
           <code class="ruby">     customer.phone_number = params[:customer_phone_number]</code>
         </li>
@@ -829,58 +829,58 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="39">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="39">
+          <span class="hits">6</span>
           
           <code class="ruby">     unless customer.save</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="40">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="40">
+          <span class="hits">2</span>
           
-          <code class="ruby">        redirect_to new_booking_url and return</code>
+          <code class="ruby">     flash[:error] = &quot;Sorry, we could not save your customer details.&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="41">
+        <li class="covered" data-hits="2" data-linenumber="41">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">     end</code>
+          <code class="ruby">        redirect_to new_booking_url and return</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="42">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">     end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="43">
           
           
-          <code class="ruby">     #is the customer logged in?</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
           
           
-          <code class="ruby">     #if not, make a customer object using details they send in a form</code>
+          <code class="ruby">     #is the customer logged in?</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="45">
           
           
-          <code class="ruby">     # if it fails,</code>
+          <code class="ruby">     #if not, make a customer object using details they send in a form</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="46">
           
           
-          <code class="ruby">    #make a booking object</code>
+          <code class="ruby">     # if it fails,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="47">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    #make a booking object</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="48">
@@ -892,85 +892,85 @@
         <li class="never" data-hits="" data-linenumber="49">
           
           
-          <code class="ruby">    #assign all the variables</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="50">
           
           
-          <code class="ruby">    # try and save it</code>
+          <code class="ruby">    #assign all the variables</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="51">
           
           
-          <code class="ruby">    #if saving successful, redirect tobooking#show</code>
+          <code class="ruby">    # try and save it</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="52">
           
           
-          <code class="ruby">    #if not, redirect booking#new form again</code>
+          <code class="ruby">    #if saving successful, redirect tobooking#show</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="53">
-          <span class="hits">4</span>
+        <li class="never" data-hits="" data-linenumber="53">
           
-          <code class="ruby">   booking = Booking.new</code>
+          
+          <code class="ruby">    #if not, redirect booking#new form again</code>
         </li>
       
         <li class="covered" data-hits="4" data-linenumber="54">
           <span class="hits">4</span>
           
-          <code class="ruby">   booking.start_date = params[:start_date]</code>
+          <code class="ruby">   booking = Booking.new</code>
         </li>
       
         <li class="covered" data-hits="4" data-linenumber="55">
           <span class="hits">4</span>
           
-          <code class="ruby">   booking.tour_id = params[:tour_id]</code>
+          <code class="ruby">   booking.start_date = params[:start_date]</code>
         </li>
       
         <li class="covered" data-hits="4" data-linenumber="56">
           <span class="hits">4</span>
           
+          <code class="ruby">   booking.tour_id = params[:tour_id]</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="57">
+          <span class="hits">4</span>
+          
           <code class="ruby">   booking.customer_id = customer.id</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="57">
+        <li class="never" data-hits="" data-linenumber="58">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="58">
+        <li class="covered" data-hits="4" data-linenumber="59">
           <span class="hits">4</span>
           
           <code class="ruby">   unless booking.save</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="59">
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="61">
           
           
           <code class="ruby">      redirect_to new_booking_url and return</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="60">
-          
-          
-          <code class="ruby">   end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="61">
-          
-          
-          <code class="ruby">  #we now saved the booking, we now need to add Booking People to the booking.</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="62">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">   end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="63">
@@ -979,10 +979,10 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="64">
-          <span class="hits">4</span>
+        <li class="never" data-hits="" data-linenumber="64">
           
-          <code class="ruby">   redirect_to booking</code>
+          
+          <code class="ruby">  # TODO we now saved the booking, we now need to add Booking People to the booking.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="65">
@@ -994,7 +994,7 @@
         <li class="never" data-hits="" data-linenumber="66">
           
           
-          <code class="ruby"> end</code>
+          <code class="ruby">   # Process Stripe payment</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="67">
@@ -1009,7 +1009,37 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="69">
+        <li class="covered" data-hits="4" data-linenumber="69">
+          <span class="hits">4</span>
+          
+          <code class="ruby">   redirect_to booking</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="70">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="71">
+          
+          
+          <code class="ruby"> end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="72">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="73">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="74">
           
           
           <code class="ruby">end</code>

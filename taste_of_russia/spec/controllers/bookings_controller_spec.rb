@@ -129,7 +129,7 @@ RSpec.describe BookingsController, type: :controller do
       # thanks for booking, but we couldn't process your payment...
     end
 
-    describe 'A booking with a new customer, but customer fields are empty' do
+    describe 'A booking with a new customer, but customer fields are invalid' do
       before do
         tour = Tour.create(
           title: 'St Petersburg to Moscow',
@@ -151,6 +151,13 @@ RSpec.describe BookingsController, type: :controller do
       it 'should redirect to booking#new' do
         expect(response).to redirect_to action: :new
       end
+
+      it 'should have a flash error message' do
+        expect(flash[:error]).to be_present
+        expect(flash[:error]).to match(/Sorry, we could not save your customer details./)
+
+      end
+
       # TODO: they should be shown an error message
     end
   end

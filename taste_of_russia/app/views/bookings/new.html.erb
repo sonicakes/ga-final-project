@@ -1,4 +1,4 @@
-form to book a tour
+<!-- form to book a tour
 
 customer details, first, last , phone, email, password, password confirm?
 
@@ -10,4 +10,44 @@ hidden form elementy tour_id = ?
 
 her is where we put the strip CC billing stuff
 
-button to cofnrim... book now
+button to cofnrim... book now -->
+
+<%= form_for @booking do |f| %>
+
+        <h1>Book a Tour: <strong><%= @tour.title %></strong>
+        </h1>
+        <h2 class="text-dark"><%= @tour.price%></h2>
+        <p><%= @tour.description %>
+        </p>
+
+          <%= label_tag :customer_email %>
+          <%= email_field_tag :customer_email %>
+
+          <%= label_tag(:first_name, "First Name")%>
+          <%= text_field_tag :cutsomer_first_name %>
+
+          <%= label_tag(:last_name, "Last name")%>
+          <%= text_field_tag :customer_last_name %>
+
+          <%= label_tag :password %>
+          <%= password_field_tag :customer_password %>
+
+          <%= label_tag :password_confirmation %>
+          <%= password_field_tag :customer_password_confirmation %>
+
+          <%= label_tag(:phone_number, "Provide Phone Number")%>
+          <%= text_field_tag :customer_phone_number %>
+
+          <%= label_tag(:start_date, "Provide Start Date")%>
+          <%= date_field_tag :start_date %>
+
+          <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+        data-description="<%= @tour.title %>"
+        data-amount="<%= @tour.price * 100 %>"
+        data-locale="auto"></script>
+
+          <%= hidden_field_tag :tour_id, @tour.id %>
+          <%= button_tag "Book now!" %>
+
+<% end %>

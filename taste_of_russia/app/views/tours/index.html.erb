@@ -1,1 +1,4 @@
-<%= @tours.inspect %>
+<h1>All Tours</h1>
+<% @tours.each do |tour| %>
+<%= link_to tour.title, tour %>
+<% end %>

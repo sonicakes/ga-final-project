@@ -15,7 +15,6 @@ class BookingsController < ApplicationController
    end
 
  def create
-
      # Every booking needs to belong to a customer
      # If the customer already has an account and is logged in, then we use
      # that customer object.
@@ -37,7 +36,8 @@ class BookingsController < ApplicationController
      customer.phone_number = params[:customer_phone_number]
 
      unless customer.save
-        redirect_to new_booking_url and return
+     flash[:error] = "Sorry, we could not save your customer details."
+        redirect_to new_booking_url(:tour_id => params[:tour_id]) and return
      end
 
      #is the customer logged in?
@@ -56,13 +56,14 @@ class BookingsController < ApplicationController
    booking.customer_id = customer.id
 
    unless booking.save
+
       redirect_to new_booking_url and return
    end
 
   # TODO we now saved the booking, we now need to add Booking People to the booking.
 
    # Process Stripe payment
-   
+
 
    redirect_to booking
 
