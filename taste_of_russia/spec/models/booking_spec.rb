@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: bookings
+#
+#  id                :bigint(8)        not null, primary key
+#  tour_id           :integer
+#  customer_id       :integer
+#  payment_reference :string
+#  start_date        :date
+#  created_at        :datetime         not null
+#  updated_at        :datetime         not null
+#
+
 require 'rails_helper'
 
 RSpec.describe Booking, type: :model do

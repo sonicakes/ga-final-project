@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: customers
+#
+#  id              :bigint(8)        not null, primary key
+#  password_digest :text
+#  email           :text
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
 require 'rails_helper'
 
 RSpec.describe Customer, type: :model do

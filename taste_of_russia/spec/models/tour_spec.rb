@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: tours
+#
+#  id          :bigint(8)        not null, primary key
+#  title       :string
+#  description :string
+#  price       :integer
+#  image_url   :string
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
 require 'rails_helper'
 
 RSpec.describe Tour, type: :model do
