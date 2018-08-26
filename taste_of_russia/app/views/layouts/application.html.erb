@@ -14,36 +14,36 @@
 
   <body>
 
-    <nav style="opacity:0.8;" id="myNav"class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:#990000 !important;">
+    <nav style="opacity:0.8;" id="myNav"class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:rgb(237, 28, 36) !important;">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <%= link_to 'All Tours', tours_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to 'New Booking', new_booking_path, class: "nav-link" %>
-          </li>
-        </ul>
-        <ul class="navbar-nav">
-          <% if @current_customer.present? %>
-            <li class="nav-item">
-              <%= link_to "Log out", login_path, :method => 'delete', class: "nav-link" %>
-            </li>
-          <% end %>
-        </li>
-        <li class="nav-item">
-          <%= link_to login_path, class: "nav-link text-white" do %>
-          <i class="fas fa-sign-in-alt"></i>
-          Log In
 
-        <% end %>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <%= link_to 'All Tours', tours_path, class: "nav-link text-white" %>
       </li>
     </ul>
+    <ul class="navbar-nav">
+      <% if @current_customer.present? %>
+        <li class="nav-item">
+          <%= link_to "Log out", login_path, :method => 'delete', class: "nav-link" %>
+        </li>
+      <% end %>
+    </li>
+    <li class="nav-item">
+      <%= link_to login_path, class: "nav-link text-white" do %>
+      <i class="fas fa-sign-in-alt"></i>
+      Log In
+    <% end %>
+  </li>
+
+    </ul>
+
   </div>
+
 </nav>
 
 <div class="container">
@@ -69,7 +69,7 @@
 </div>
 
 <%= yield %>
-<div class="footer fixed-bottom mt-4 p-2 bg-dark text-white text-center" style="background-color:#990000 !important;">
+<div class="footer fixed-bottom mt-4 p-2 bg-dark text-white text-center" style="background-color:rgb(237, 28, 36) !important;opacity:0.8;">
   Copyright @sonicakes 2018
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

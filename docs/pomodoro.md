@@ -34,3 +34,7 @@ Continue writing views
 ## Sund 26 Aug 3:25 pm
 Still writing basic views. Using bootstrap styles for laying out, but will improve later.
 Next task is writing booking form with Stripe component
+
+## Mon 27 Aug 8.15 am 
+Started styling All tours page, realised that my navbar is not visible and i'll have to set up a background image for All Tour and probably other pages so that navbar scrollis consistent.
+
