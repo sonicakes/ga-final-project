@@ -57,4 +57,7 @@ Added img urls to Tour Day to display them as gallery.
 ## Mon 27 Aug, 2.40 am
 Added cards for tour_days and fixed bug in tour#show
 
+## Mon 27 Aug, 3.30 pm
+Display maps hidden and toggle() when clicked, figuring out how to only show one at a time and not all together maps/days info.
+
 
