@@ -51,4 +51,7 @@ Added details button, started making featured tours carousel on the homepage
 ## Mon 27 Aug, 11 am
 Carousel added with featured tours and button for more, imgs use CSS filter for brightness
 
+## Mon 27, 11 40 am
+Added img urls to Tour Day to display them as gallery.
+
 

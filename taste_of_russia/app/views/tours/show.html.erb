@@ -1,12 +1,28 @@
-<%= link_to "Go Back", tours_path, class: 'btn btn-sm btn-info' %>
+<div id="show-content" class="bg-none">
+  <div class="overlay">
+<div class="container">
+  <%= link_to "Go Back", tours_path, class: 'btn btn-sm btn-info mt-5' %>
+  <div class="row bg-dark">
 
-<h1 class="text-dark display-3">
+    <div class="col-12 mx-auto">
+
+
+<h1 class="text-white display-3 text-center">
   <strong><%= @tour.title %></strong>
 </h1>
-<h2 class="text-dark"><%= @tour.price%></h2>
-<p><%= @tour.description %>
+<h2 class="text-white text-center"><%= @tour.tour_days.size %> days </h2>
+<h5 class="text-white text-center">$<%= @tour.price%></h5>
+<p class="text-white"><%= @tour.description %>
 </p>
-
-<%= link_to "Book this Tour", new_booking_path(:tour_id => @tour.id), class: 'form_button' %>
-
+<p class="text-center">
+<%= link_to "Book this Tour", new_booking_path(:tour_id => @tour.id), class: 'btn btn-info' %>
+</p>
+          <% @tour.tour_day each do |day| %>
+      <h4>    <%= day.day_image_url %> </h4>
+          <% end %>
 <!-- a button to book now with ?tour_id = this tour -->
+</div>
+</div>
+</div>
+</div>
+</div>

@@ -69,24 +69,28 @@ tour5 = Tour.create(
 tour_day1_1 = TourDay.create(
   :title => 'St Petersburg Musuem',
   :description => 'Wander the Hermitage Museum',
+  :day_image_url => "https://images.unsplash.com/photo-1529839731635-e4909433cc5c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=20352d6b4a065f060130e4136eb796f6&auto=format&fit=crop&w=500&q=60"
 )
 tour1.tour_days << tour_day1_1
 
 tour_day1_2 = TourDay.create(
   :title => 'Petergoff',
   :description => 'Visit one of the most aazing royalty living spaces',
+  :day_image_url => 'https://media-cdn.tripadvisor.com/media/photo-s/03/64/07/98/peterhof-palace-and-garden.jpg'
 )
 tour1.tour_days << tour_day1_2
 
 tour_day1_3 = TourDay.create(
   :title => 'St Petersburg to Moscow by train',
   :description => 'Travel in one of the fastest trains with comfort',
+  :day_image_url => 'https://images.unsplash.com/photo-1519739311505-d0beab92872c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=618f8af3784497fffebf822157011dcb&auto=format&fit=crop&w=500&q=60'
 )
 tour1.tour_days << tour_day1_3
 
 tour_day1_4 = TourDay.create(
   :title => 'Moscow, Red Square and CBD',
   :description => 'Explore one of the most vibrant cities',
+  :day_image_url => 'https://s3.envato.com/files/241841587/preview.jpg'
 )
 tour1.tour_days << tour_day1_4
 
@@ -95,24 +99,28 @@ tour1.tour_days << tour_day1_4
 tour_day2_1 = TourDay.create(
   :title => 'Moscow, Red Square',
   :description => 'Wander the Red Square',
+  :day_image_url => 'http://registremblay.com/wp-content/uploads/2016/09/Moscow_700x400.jpg'
 )
 tour2.tour_days << tour_day2_1
 
 tour_day2_2 = TourDay.create(
   :title => 'Train from Moscow to Voronezh',
   :description => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  cupid',
+  :day_image_url => 'http://russiatrek.org/images/photo/voronezh-city-scenery.jpg'
 )
 tour2.tour_days << tour_day2_2
 
 tour_day2_3 = TourDay.create(
   :title => 'Voronezh city tour',
   :description => 'Explore young and modern city with million people',
+  :day_image_url => 'https://upload.wikimedia.org/wikipedia/commons/7/79/Voronezh._Russia._stone_Bridge._%28%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6._%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BC%D0%BE%D1%81%D1%82%29.JPG'
 )
 tour2.tour_days << tour_day2_3
 
 tour_day2_4 = TourDay.create(
   :title => 'Voronezh and Lipetsk',
   :description => 'Explore the home town of Peter the Great',
+  :day_image_url => 'https://ribttes.com/wp-content/uploads/2014/09/Monument-to-Peter-the-Great-in-Lipetsk-Russia.jpg'
 )
 tour2.tour_days << tour_day2_4
 

@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 2018_08_25_012311) do
     t.string "title"
     t.integer "tour_id"
     t.string "description"
+    t.string "day_image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
