@@ -64,5 +64,8 @@ Display maps hidden and toggle() when clicked, figuring out how to only show one
 ## Mon 27 Aug, 4.25 pm
 Added Booking Form, dont know how to include otf font file everywhere in the app.
 
+## Mon 27 Aug, 6.35 pm
+Added Successful booking view
+
 
 

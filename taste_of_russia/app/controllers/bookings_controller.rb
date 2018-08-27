@@ -72,5 +72,17 @@ class BookingsController < ApplicationController
 
  end
 
+ def update
+     holiday = Booking.find params[:id]
+     holiday.update booking_params
+     redirect_to booking
+   end
+
+   def destroy
+  booking = Booking.find params[:id]
+  booking.destroy 
+    flash[:success] =  "Booking Successfully Deleted!"
+  redirect_to tours_path
+end
 
 end
