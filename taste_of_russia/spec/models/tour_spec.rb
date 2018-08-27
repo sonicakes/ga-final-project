@@ -47,7 +47,7 @@ RSpec.describe Tour, type: :model do
     expect(subject).to_not be_valid
   end
 
-  it 'is not valid when a description is longer than 200 characters' do
+  it 'is not valid when a description is longer than 500 characters' do
     subject.description = 'A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk.'
     expect(subject).to_not be_valid
   end

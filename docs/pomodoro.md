@@ -42,3 +42,7 @@ Started styling All tours page, realised that my navbar is not visible and i'll 
 Decided on making list of tours as a Bootstrap table. Need to add image row to Tour table to display in the tours# index list. Background is Russian pattern.
 
 
+## Mon 27 Aug, 9.41 am
+Added img to Tours, now they display in the tour#index, made substring to display description partly. Need to make a button for booking/view more details.
+
+

@@ -28,14 +28,14 @@ administrator = Administrator.create(
 
 tour1 = Tour.create(
   :title => "St Petersburg to Moscow",
-  :description => "Foo",
+  :description => "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu",
   :price => 500,
   :image_url => "https://images.unsplash.com/photo-1508783156892-955810b99f21?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=247ba905d9aba06ad8bf1689490d685b&auto=format&fit=crop&w=1189&q=80"
 )
 
 tour2 = Tour.create(
   :title => "Moscow, Voronezh, Lipetsk",
-  :description => "Foo",
+  :description => "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu",
   :price => 1500,
   :image_url => "https://ribttes.com/wp-content/uploads/2014/09/15-2.jpg"
 
@@ -43,7 +43,7 @@ tour2 = Tour.create(
 
 tour3 = Tour.create(
   :title => "Trans Siberian Adventure",
-  :description => "Foo",
+  :description => "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu",
   :price => 7800,
   :image_url => "https://images.unsplash.com/photo-1424886097867-7a53e6058dff?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=633455f80835a74c6e3b7142b700a32b&auto=format&fit=crop&w=1492&q=80"
 
@@ -51,7 +51,7 @@ tour3 = Tour.create(
 
 tour4 = Tour.create(
   :title => "The Urals Bliss",
-  :description => "Foo",
+  :description => "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu",
   :price => 5000,
   :image_url => "https://i.dailymail.co.uk/i/pix/2013/09/10/article-2416920-1BBDEB90000005DC-847_634x423.jpg"
 
@@ -59,7 +59,7 @@ tour4 = Tour.create(
 
 tour5 = Tour.create(
   :title => "Lake Baikal",
-  :description => "Foo",
+  :description => "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu",
   :price => 4500,
   :image_url => "https://images.unsplash.com/photo-1518680371558-107eece618ec?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ddf4e1d5545c02d744e803ba690f5ffc&auto=format&fit=crop&w=500&q=60"
 
