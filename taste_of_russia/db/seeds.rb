@@ -124,6 +124,57 @@ tour_day2_4 = TourDay.create(
 )
 tour2.tour_days << tour_day2_4
 
+# Seed Tour Days for Tour 3
+
+tour_day3_1 = TourDay.create(
+  :title => 'Vladivostok',
+  :description => 'Visit the famous fortress and Russky Bridge',
+  :day_image_url => 'https://sailtraininginternational.org/app/uploads/2017/10/vladivostok-3.jpg'
+)
+tour3.tour_days << tour_day3_1
+
+tour_day3_2 = TourDay.create(
+  :title => 'Khabarovsk to Ulan-Ude',
+  :description => 'train trip from Khabarovsk, the city on the Amur River',
+  :day_image_url => 'https://img-fotki.yandex.ru/get/196102/30348152.211/0_90ee1_e53837a9_orig'
+)
+tour3.tour_days << tour_day3_2
+
+tour_day3_3 = TourDay.create(
+  :title => 'Irkustsk to Krasnoyarsk',
+  :description => 'Irkustsk is famous for its numerous Orthodox churches',
+  :day_image_url => 'https://onestep4ward.com/wp-content/uploads/2012/04/Kazan-Church-Irkutsk.jpg'
+)
+tour3.tour_days << tour_day3_3
+
+tour_day3_4 = TourDay.create(
+  :title => 'Novosibirsk and Omsk',
+  :description => 'Explore the third most populous city in Russia, rich and vibrant Novosibirsk',
+  :day_image_url => 'https://www.travelshelper.com/wp-content/uploads/2017/02/Novosibirsk-Travel-S-Helper.jpg'
+)
+tour3.tour_days << tour_day3_4
+
+tour_day3_5 = TourDay.create(
+  :title => 'Yekaterinburg',
+  :description => 'The city was called after the Catherine the Great',
+  :day_image_url => 'https://i.ytimg.com/vi/pIdsOxNkR3I/maxresdefault.jpg'
+)
+tour3.tour_days << tour_day3_5
+
+tour_day3_6 = TourDay.create(
+  :title => 'Perm',
+  :description => 'Deep into Ural Mountains, on the banks of the Kama River, Perm is home to rare snow leopards and Amur tigers',
+  :day_image_url => 'http://russiatrek.org/blog/wp-content/uploads/2016/03/winter-in-perm-city-russia-from-above-5.jpg'
+)
+tour3.tour_days << tour_day3_6
+
+tour_day3_7 = TourDay.create(
+  :title => 'Yaroslavl to Moscow',
+  :description => "It's part of the Golden Ring group of ancient towns. On the grounds of the 12th-century Spaso-Preobrazhensky (Savior Transfiguration) Monastery",
+  :day_image_url => 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Yaroslavl_Spaso-Preobrazhensky_Monastery_The_Church_of_Yaroslavl_Miracle-Workers_and_Transfiguration_Cathedral_IMG_0837_1725.jpg'
+)
+tour3.tour_days << tour_day3_7
+
 # Seed Booking for Customer 1 and Tour 1, that is paid
 booking1 = Booking.create(
   :payment_reference => "12345",

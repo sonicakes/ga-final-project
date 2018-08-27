@@ -67,5 +67,8 @@ Added Booking Form, dont know how to include otf font file everywhere in the app
 ## Mon 27 Aug, 6.35 pm
 Added Successful booking view
 
+## Mon 27 Aug 7.15 pm
+Added more tour_days for seeds data, but now the day number is wrong.
+
 
 
