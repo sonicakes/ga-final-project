@@ -54,4 +54,7 @@ Carousel added with featured tours and button for more, imgs use CSS filter for 
 ## Mon 27, 11 40 am
 Added img urls to Tour Day to display them as gallery.
 
+## Mon 27 Aug, 2.40 am
+Added cards for tour_days and fixed bug in tour#show
+
 
