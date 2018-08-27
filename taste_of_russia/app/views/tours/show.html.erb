@@ -44,7 +44,7 @@
 
 </div>
 <!--this is more content and a map for each particular day  -->
-<div class="row db-dark">
+<div class="row db-dark maps-day"style="display:none;">
 <% @tour.tour_days.each do |day|%>
 
   <div class="col-md-4 bg-dark">
@@ -57,7 +57,7 @@
 
 
   </div>
-  <div class="col-md-8 bg-dark maps-day"style="display:none;">
+  <div class="col-md-8 bg-dark ">
     <h3 class="text-white text-center">This is the map of the day's location </h3>
     <div class="text-center">
 <img src="https://via.placeholder.com/350x150" class=""alt="google maps">

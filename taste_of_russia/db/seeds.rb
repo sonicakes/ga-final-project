@@ -105,7 +105,7 @@ tour2.tour_days << tour_day2_1
 
 tour_day2_2 = TourDay.create(
   :title => 'Train from Moscow to Voronezh',
-  :description => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  cupid',
+  :description => 'One night train from Moscow, you can enjoy this university town, home to many Russian artists and poets.',
   :day_image_url => 'http://russiatrek.org/images/photo/voronezh-city-scenery.jpg'
 )
 tour2.tour_days << tour_day2_2
