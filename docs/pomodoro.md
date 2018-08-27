@@ -48,4 +48,7 @@ Added img to Tours, now they display in the tour#index, made substring to displa
 ## Mon 27 Aug, 10.15 am
 Added details button, started making featured tours carousel on the homepage
 
+## Mon 27 Aug, 11 am
+Carousel added with featured tours and button for more, imgs use CSS filter for brightness
+
 
