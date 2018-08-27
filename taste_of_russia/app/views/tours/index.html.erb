@@ -1,5 +1,6 @@
 <!-- All Tours#index section -->
-<div id="menu-content" class="bg-none text-dark">
+<div id="menu-content" class="bg-none">
+  <div class="overlay">
   <div class="container">
     <div class="row">
       <div class="col">
@@ -18,6 +19,7 @@
               <th scope="col">Description</th>
               <th scope="col">Duration</th>
               <th scope="col">Price</th>
+              <th scope="col">Details and Book</th>
             </tr>
           </thead>
           <tbody>
@@ -31,6 +33,7 @@
 
                 <td><%= tour.tour_days.size %> days</td>
                 <td>$<%= tour.price %></td>
+                <td> <%= link_to "Details and Booking", tour, class: "btn btn-info"  %></td>
               </tr>
             <% end %>
           </tbody>
@@ -39,4 +42,5 @@
     </div>
 
   </div>
+</div>
 </div>

@@ -45,4 +45,7 @@ Decided on making list of tours as a Bootstrap table. Need to add image row to T
 ## Mon 27 Aug, 9.41 am
 Added img to Tours, now they display in the tour#index, made substring to display description partly. Need to make a button for booking/view more details.
 
+## Mon 27 Aug, 10.15 am
+Added details button, started making featured tours carousel on the homepage
+
 
