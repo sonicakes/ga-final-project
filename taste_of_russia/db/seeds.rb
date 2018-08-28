@@ -70,6 +70,7 @@ tour_day1_1 = TourDay.create(
   :title => 'St Petersburg Musuem',
   :description => 'Wander the Hermitage Museum',
   :order => 1,
+  :location => "St Petersburg",
   :day_image_url => "https://images.unsplash.com/photo-1529839731635-e4909433cc5c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=20352d6b4a065f060130e4136eb796f6&auto=format&fit=crop&w=500&q=60"
 )
 tour1.tour_days << tour_day1_1
@@ -78,6 +79,7 @@ tour_day1_2 = TourDay.create(
   :title => 'Petergoff',
   :description => 'Visit one of the most aazing royalty living spaces',
   :order => 2,
+  :location => 'Petergof',
   :day_image_url => 'https://media-cdn.tripadvisor.com/media/photo-s/03/64/07/98/peterhof-palace-and-garden.jpg'
 )
 tour1.tour_days << tour_day1_2
@@ -86,6 +88,7 @@ tour_day1_3 = TourDay.create(
   :title => 'St Petersburg to Moscow by train',
   :description => 'Travel in one of the fastest trains with comfort',
   :order => 3,
+  :location => 'Moscow',
   :day_image_url => 'https://images.unsplash.com/photo-1519739311505-d0beab92872c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=618f8af3784497fffebf822157011dcb&auto=format&fit=crop&w=500&q=60'
 )
 tour1.tour_days << tour_day1_3
@@ -94,6 +97,7 @@ tour_day1_4 = TourDay.create(
   :title => 'Moscow, Red Square and CBD',
   :description => 'Explore one of the most vibrant cities',
   :order => 4,
+  :location => 'Red Square',
   :day_image_url => 'https://s3.envato.com/files/241841587/preview.jpg'
 )
 tour1.tour_days << tour_day1_4
@@ -104,6 +108,7 @@ tour_day2_1 = TourDay.create(
   :title => 'Moscow, Red Square',
   :description => 'Wander the Red Square',
   :order => 1,
+  :location => "Moscow",
   :day_image_url => 'http://registremblay.com/wp-content/uploads/2016/09/Moscow_700x400.jpg'
 )
 tour2.tour_days << tour_day2_1
@@ -111,6 +116,7 @@ tour2.tour_days << tour_day2_1
 tour_day2_2 = TourDay.create(
   :title => 'Train from Moscow to Voronezh',
   :order => 2,
+  :location => 'Voronezh',
   :description => 'One night train from Moscow, you can enjoy this university town, home to many Russian artists and poets.',
   :day_image_url => 'http://russiatrek.org/images/photo/voronezh-city-scenery.jpg'
 )
@@ -119,6 +125,7 @@ tour2.tour_days << tour_day2_2
 tour_day2_3 = TourDay.create(
   :title => 'Voronezh city tour',
   :order => 3,
+  :location => 'Voronezh',
   :description => 'Explore young and modern city with million people',
   :day_image_url => 'https://upload.wikimedia.org/wikipedia/commons/7/79/Voronezh._Russia._stone_Bridge._%28%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6._%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BC%D0%BE%D1%81%D1%82%29.JPG'
 )
@@ -127,6 +134,7 @@ tour2.tour_days << tour_day2_3
 tour_day2_4 = TourDay.create(
   :title => 'Voronezh and Lipetsk',
   :order => 4,
+  :location => 'Lipetsk',
   :description => 'Explore the home town of Peter the Great',
   :day_image_url => 'https://ribttes.com/wp-content/uploads/2014/09/Monument-to-Peter-the-Great-in-Lipetsk-Russia.jpg'
 )
@@ -137,6 +145,7 @@ tour2.tour_days << tour_day2_4
 tour_day3_1 = TourDay.create(
   :title => 'Vladivostok',
   :order => 1,
+  :location => 'Vladivistok',
   :description => 'Visit the famous fortress and Russky Bridge',
   :day_image_url => 'https://sailtraininginternational.org/app/uploads/2017/10/vladivostok-3.jpg'
 )
@@ -145,6 +154,7 @@ tour3.tour_days << tour_day3_1
 tour_day3_2 = TourDay.create(
   :title => 'Khabarovsk to Ulan-Ude',
   :order => 2,
+  :location => 'Khabarosk',
   :description => 'train trip from Khabarovsk, the city on the Amur River',
   :day_image_url => 'https://img-fotki.yandex.ru/get/196102/30348152.211/0_90ee1_e53837a9_orig'
 )
@@ -153,6 +163,7 @@ tour3.tour_days << tour_day3_2
 tour_day3_3 = TourDay.create(
   :title => 'Irkustsk to Krasnoyarsk',
   :order => 3,
+  :location => 'Irkutsk',
   :description => 'Irkustsk is famous for its numerous Orthodox churches',
   :day_image_url => 'https://onestep4ward.com/wp-content/uploads/2012/04/Kazan-Church-Irkutsk.jpg'
 )
@@ -161,6 +172,7 @@ tour3.tour_days << tour_day3_3
 tour_day3_4 = TourDay.create(
   :title => 'Novosibirsk and Omsk',
   :order => 4,
+  :location => 'Novosibirsk',
   :description => 'Explore the third most populous city in Russia, rich and vibrant Novosibirsk',
   :day_image_url => 'https://www.travelshelper.com/wp-content/uploads/2017/02/Novosibirsk-Travel-S-Helper.jpg'
 )
@@ -169,6 +181,7 @@ tour3.tour_days << tour_day3_4
 tour_day3_5 = TourDay.create(
   :title => 'Yekaterinburg',
   :order => 5,
+  :location => 'Yekaterinburg',
   :description => 'The city was called after the Catherine the Great',
   :day_image_url => 'https://i.ytimg.com/vi/pIdsOxNkR3I/maxresdefault.jpg'
 )
@@ -177,6 +190,7 @@ tour3.tour_days << tour_day3_5
 tour_day3_6 = TourDay.create(
   :title => 'Perm',
   :order => 6,
+  :location => 'Perm',
   :description => 'Deep into Ural Mountains, on the banks of the Kama River, Perm is home to rare snow leopards and Amur tigers',
   :day_image_url => 'http://russiatrek.org/blog/wp-content/uploads/2016/03/winter-in-perm-city-russia-from-above-5.jpg'
 )
@@ -185,6 +199,7 @@ tour3.tour_days << tour_day3_6
 tour_day3_7 = TourDay.create(
   :title => 'Yaroslavl to Moscow',
   :order => 7,
+  :location => 'Yaroslavl',
   :description => "It's part of the Golden Ring group of ancient towns. On the grounds of the 12th-century Spaso-Preobrazhensky (Savior Transfiguration) Monastery",
   :day_image_url => 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Yaroslavl_Spaso-Preobrazhensky_Monastery_The_Church_of_Yaroslavl_Miracle-Workers_and_Transfiguration_Cathedral_IMG_0837_1725.jpg'
 )

@@ -8,6 +8,7 @@
 #  description   :string
 #  day_image_url :string
 #  order         :integer
+#  location      :string
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
 #

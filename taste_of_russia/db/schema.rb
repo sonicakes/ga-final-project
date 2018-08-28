@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(version: 2018_08_25_012311) do
     t.string "description"
     t.string "day_image_url"
     t.integer "order"
+    t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
