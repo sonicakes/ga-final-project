@@ -75,4 +75,7 @@ Added more tour_days for seeds data, but now the day number is wrong.
 ## Tue 28 Aug 9.30 am
 Added status field to Booking, added order field to Tour_day
 
+## Tue 28 Aug 10.20 am
+Fixed status "placed" when we make a booking and "cancelled" when we cancel.
+
 

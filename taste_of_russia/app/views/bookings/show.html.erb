@@ -11,9 +11,15 @@
               <%= @booking.tour.title %></strong>
             tour:</h3>
           <ul>
+            <li>Your customer email is:
+              <%= @booking.customer.email %></li>
+              <li>Your customer password is:
+                <%= @booking.customer.password %></li>
             <li>Payment reference:<%= @booking.payment_reference %></li>
             <li>Your start date is:
               <%= @booking.start_date %></li>
+              <li class="text-white">Your booking status is:
+                <%= @booking.status %></li>
           </ul>
 
           <ul class="nav justify-content-end mx-2">

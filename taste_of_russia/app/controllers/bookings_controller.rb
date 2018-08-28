@@ -54,7 +54,7 @@ class BookingsController < ApplicationController
     #if not, redirect booking#new form again
    booking = Booking.new
    booking.start_date = params[:start_date]
-   booking.status = params[:status]
+   booking.status = "placed" # params[:status]
    booking.tour_id = params[:tour_id]
    booking.customer_id = customer.id
    booking.payment_reference = params[:stripeToken]
@@ -72,9 +72,13 @@ class BookingsController < ApplicationController
    redirect_to booking
 
  end
-
+# this is not actually delete method, just changing the status of the booking from placed to cancelled
 def destroy
-
+  booking = Booking.find(params[:id])
+  booking.status = 'cancelled'
+  booking.save
+  flash[:success] =  "Booking Cancelled!"
+  redirect_to tours_path
 end
 
 
