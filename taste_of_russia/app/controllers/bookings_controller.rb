@@ -1,6 +1,6 @@
 class BookingsController < ApplicationController
   def index
-    authorize_customer
+  #  authorize_customer
     @bookings = Booking.all
   end
 

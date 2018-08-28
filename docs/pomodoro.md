@@ -78,4 +78,7 @@ Added status field to Booking, added order field to Tour_day
 ## Tue 28 Aug 10.20 am
 Fixed status "placed" when we make a booking and "cancelled" when we cancel.
 
+## Tues 28 Aug 11.05 am
+Could not save login customer to show bookings only to him ,so for now showing bookings list to everyone.
+
 

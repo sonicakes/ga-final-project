@@ -1,0 +1,9 @@
+<h1 class="mt-5">All bookings displayed here</h1>
+<ul>
+        <% @bookings.each do |booking| %>
+<p> <%= booking.start_date %></p>
+<p> <%= booking.payment_reference %></p>
+<p> <%= booking.customer_id %></p>
+<p> <%= booking.customer.email %></p>
+<% end %>
+</ul>

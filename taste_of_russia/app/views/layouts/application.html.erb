@@ -33,14 +33,18 @@
             <li class="nav-item">
               <%= link_to "Log out", login_path, :method => 'delete', class: "nav-link text-white" %>
             </li>
-          <% end %>
-        </li>
-        <li class="nav-item">
-          <%= link_to login_path, class: "nav-link text-white" do %>
-          <i class="fas fa-sign-in-alt"></i>
-          Log In
-        <% end %>
-      </li>
+            <% end %>
+
+              <li class="nav-item">
+                <%= link_to "My Bookings", bookings_path, class: "nav-link text-white" %>
+              </li>
+  
+
+          <% if @current_customer.blank? %>
+            <li class="nav-item">
+              <%= link_to "Log In", login_path, class: "nav-link text-white" %>
+            </li>
+            <% end %>
 
     </ul>
 
