@@ -1,9 +1,22 @@
+<div id="booking-all" class="bg-none">
+  <div class="overlay">
+<div class="container mt-5 bg-light">
+  <div class="row">
+    <div class="col-12 col-md-6 mx-auto">
 <h1 class="mt-5">All bookings displayed here</h1>
-<ul>
+
         <% @bookings.each do |booking| %>
-<p> <%= booking.start_date %></p>
-<p> <%= booking.payment_reference %></p>
-<p> <%= booking.customer_id %></p>
-<p> <%= booking.customer.email %></p>
-<% end %>
+        <ul class="border">
+<li> Start date:<%= booking.start_date %></li>
+<li> Payment reference: <%= booking.payment_reference %></li>
+<li> Booking status: <%= booking.status %></li>
+<li> Customer id: <%= booking.customer_id %></li>
+<li> Customer email: <%= booking.customer.email %></li>
+<li> Tour being booked: <%= booking.tour.title %></li>
 </ul>
+<% end %>
+</div>
+</div>
+</div>
+</div>
+</div>

@@ -81,4 +81,7 @@ Fixed status "placed" when we make a booking and "cancelled" when we cancel.
 ## Tues 28 Aug 11.05 am
 Could not save login customer to show bookings only to him ,so for now showing bookings list to everyone.
 
+## Tues28 Aug 11.40 am
+Styled log in and all bookings form. Made lists of all feature and need to sacrifice on some...
+
 

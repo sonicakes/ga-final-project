@@ -32,3 +32,17 @@
     position: absolute;
     width: 100%;
     min-height: 2000px; }
+
+    #booking-all {
+      background-image: url(/assets/newPattern.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      min-height: 2000px;
+      width: 100%;
+    }
+    #booking-all .overlay {
+      background-color: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      width: 100%;
+      min-height: 2000px; }
