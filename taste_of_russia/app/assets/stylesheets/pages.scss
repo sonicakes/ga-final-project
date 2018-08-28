@@ -1,50 +1,53 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.navbar-light .navbar-brand{
-  color:rgb(237, 28, 36);
-}
-.navbar-light .navbar-brand.scroll-down{
-  color:white;
+
+.navbar-light .navbar-brand {
+  color: rgb(237, 28, 36);
 }
 
-@font-face {
-    font-family: 'RussianLand';
-    src: font-url('RussianLand.ttf') format("truetype");
+.navbar-light .navbar-brand.scroll-down {
+  color: white;
 }
 @font-face {
-    font-family: 'Quicksand-Regular';
-    src: font-url('Quicksand-Regular.otf') format("opentype");
+  font-family: 'RussianLand';
+  src: font-url('RussianLand.ttf') format("truetype");
 }
-.body{
-      font-family: 'Quicksand-Regular';
+@font-face {
+  font-family: 'Quicksand-Regular';
+  src: font-url('Quicksand-Regular.otf') format("opentype");
 }
+
+.body {
+  font-family: 'Quicksand-Regular';
+}
+
 #landing {
-  background-image: url(/assets/snow.jpg);
+  background-image: url("/assets/snow.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  top: 0;
   min-height: 1000px;
   width: 100%;
-
 }
 
-  #landing .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    width: 100%;
-    min-height: 1000px; }
+#landing .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  min-height: 1000px;
+}
 
+#contact-content {
+  // background-image: url("img/newPattern.png");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-attachment: fixed;
+  min-height: 1000px;
+  width: 100%;
+}
 
-    #contact-content {
-      background-image: url("img/newPattern.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-      min-height: 1000px;
-      width: 100%;
-    }
-.filter{
+.filter {
   filter: brightness(70%);
-
 }

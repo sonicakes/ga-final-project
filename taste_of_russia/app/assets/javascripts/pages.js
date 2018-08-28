@@ -3,19 +3,15 @@ $(document).ready(function() {
 
   window.addEventListener("scroll", function() {
     if (window.scrollY > 100) {
-      console.log('navbar > 100');
-      $('nav').addClass("bg-danger");
-      $('nav').removeClass("bg-none");
+      // $('nav').addClass("bg-danger");
+      // $('nav').removeClass("bg-dark");
       $("#topButton").show();
       $("#navBr").addClass('scroll-down');
     } else {
-      console.log('navbar less 100');
-      $('nav').removeClass("bg-danger");
-      $('nav').addClass("bg-none");
+      // $('nav').removeClass("bg-danger");
+      // $('nav').addClass("bg-dark");
       $("#topButton").hide();
       $("#navBr").removeClass('scroll-down');
-
-
     }
   });
 });

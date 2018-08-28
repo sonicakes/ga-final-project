@@ -1,11 +1,14 @@
 class SessionController < ApplicationController
   def destroy
-    redirect_to :login
+    session[:customer_id] = nil
+    flash[:notice] = "You have logged out."
+    redirect_to root_path
   end
 
   def create
 
     customer = Customer.find_by :email => params[:email]
+
     if customer.present? && customer.authenticate(params[:password])
       # If a user record with the entered in the form is present AND the user is authenticated (using bcrypt's authenticate method and the password entered in the form), store their id in the session hash and redirect them to the root path.
       session[:customer_id] = customer.id

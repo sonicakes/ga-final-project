@@ -1,48 +1,37 @@
-// Place all the styles related to the Bookings controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-.body{
-      font-family: 'Quicksand-Regular';
+
+
+.body {
+  font-family: 'Quicksand-Regular';
 }
+
 #booking-content {
-  background-image: url(/assets/newPattern.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   min-height: 2000px;
   width: 100%;
 }
+
 #booking-content .overlay {
-  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   width: 100%;
-  min-height: 2000px; }
+  min-height: 2000px;
+}
 
+#booking-details {
+  min-height: 2000px;
+  width: 100%;
+}
 
-  #booking-details {
-    background-image: url(/assets/newPattern.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 2000px;
-    width: 100%;
-  }
-  #booking-details .overlay {
-    background-color: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    width: 100%;
-    min-height: 2000px; }
+#booking-details .overlay {
+  width: 100%;
+  min-height: 2000px;
+}
 
-    #booking-all {
-      background-image: url(/assets/newPattern.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-      min-height: 2000px;
-      width: 100%;
-    }
-    #booking-all .overlay {
-      background-color: rgba(0, 0, 0, 0.3);
-      position: absolute;
-      width: 100%;
-      min-height: 2000px; }
+#booking-all {
+  min-height: 2000px;
+  width: 100%;
+}
+
+#booking-all .overlay {
+  position: absolute;
+  width: 100%;
+  min-height: 2000px;
+}

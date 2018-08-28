@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
   def current_administrator
     @current_administrator ||= Administrator.find(session[:administrator_id]) if session[:administrator_id]
   end
-  helper_method :current_customer
+  helper_method :current_administrator
 
   def authorize_customer
     redirect_to '/login' unless current_customer

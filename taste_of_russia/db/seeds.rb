@@ -70,7 +70,7 @@ tour_day1_1 = TourDay.create(
   :title => 'St Petersburg Musuem',
   :description => 'Wander the Hermitage Museum',
   :order => 1,
-  :location => "St Petersburg",
+  :location => "59.9343/30.3343",
   :day_image_url => "https://images.unsplash.com/photo-1529839731635-e4909433cc5c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=20352d6b4a065f060130e4136eb796f6&auto=format&fit=crop&w=500&q=60"
 )
 tour1.tour_days << tour_day1_1
@@ -134,7 +134,7 @@ tour2.tour_days << tour_day2_3
 tour_day2_4 = TourDay.create(
   :title => 'Voronezh and Lipetsk',
   :order => 4,
-  :location => 'Lipetsk',
+  :location => '52.6122/39.5975',
   :description => 'Explore the home town of Peter the Great',
   :day_image_url => 'https://ribttes.com/wp-content/uploads/2014/09/Monument-to-Peter-the-Great-in-Lipetsk-Russia.jpg'
 )
