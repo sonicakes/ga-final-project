@@ -85,3 +85,7 @@ Could not save login customer to show bookings only to him ,so for now showing b
 Styled log in and all bookings form. Made lists of all feature and need to sacrifice on some...
 
 
+## Wed 29 Aug 8.35 am
+Addedlang/lot into 'location' row in seeds to display different maps for tour_days
+
+
