@@ -18,11 +18,7 @@
 
           <ul class="nav justify-content-end mx-2">
             <li class="nav-item">
-              <%= link_to "Edit Booking", edit_booking_path(@booking), class: "btn btn-sm btn-warning" %>
-
-            </li>
-            <li class="nav-item">
-              <%= link_to "Delete Booking", booking_path(@booking), :method => 'delete', :data => { :confirm => 'Are you sure?' }, class: "btn btn-sm btn-danger" %>
+              <%= link_to "Cancel Booking", booking_path(@booking), :method => 'delete', :data => { :confirm => 'Are you sure?' }, class: "btn btn-sm btn-danger" %>
             </li>
 
           </ul>

@@ -54,6 +54,7 @@ class BookingsController < ApplicationController
     #if not, redirect booking#new form again
    booking = Booking.new
    booking.start_date = params[:start_date]
+   booking.status = params[:status]
    booking.tour_id = params[:tour_id]
    booking.customer_id = customer.id
    booking.payment_reference = params[:stripeToken]
@@ -72,17 +73,9 @@ class BookingsController < ApplicationController
 
  end
 
- def update
-     holiday = Booking.find params[:id]
-     holiday.update booking_params
-     redirect_to booking
-   end
+def destroy
 
-   def destroy
-  booking = Booking.find params[:id]
-  booking.destroy 
-    flash[:success] =  "Booking Successfully Deleted!"
-  redirect_to tours_path
 end
+
 
 end

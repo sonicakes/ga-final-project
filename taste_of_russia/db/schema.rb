@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 2018_08_25_012311) do
     t.integer "customer_id"
     t.string "payment_reference"
     t.date "start_date"
+    t.string "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -53,6 +54,7 @@ ActiveRecord::Schema.define(version: 2018_08_25_012311) do
     t.integer "tour_id"
     t.string "description"
     t.string "day_image_url"
+    t.integer "order"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

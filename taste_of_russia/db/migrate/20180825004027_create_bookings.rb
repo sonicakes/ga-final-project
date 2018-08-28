@@ -5,6 +5,7 @@ class CreateBookings < ActiveRecord::Migration[5.2]
       t.integer :customer_id
       t.string :payment_reference
       t.date :start_date
+      t.string :status
       t.timestamps
     end
   end

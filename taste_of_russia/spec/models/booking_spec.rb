@@ -7,6 +7,7 @@
 #  customer_id       :integer
 #  payment_reference :string
 #  start_date        :date
+#  status            :string
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null
 #

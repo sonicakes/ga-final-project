@@ -7,6 +7,7 @@
 #  tour_id       :integer
 #  description   :string
 #  day_image_url :string
+#  order         :integer
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
 #

@@ -1,70 +1,75 @@
 <div id="show-content" class="bg-none">
   <div class="overlay">
-<div class="container">
-  <%= link_to "Go Back", tours_path, class: 'btn btn-sm btn-info mt-5' %>
-  <div class="row bg-dark">
+    <div class="container mt-5">
 
-    <div class="col-12 mx-auto">
+      <div class="row bg-dark">
 
+        <div class="col-12 mx-auto">
 
-<h1 class="text-white display-3 text-center">
-  <strong><%= @tour.title %></strong>
-</h1>
-<h2 class="text-white text-center"><%= @tour.tour_days.size %> days </h2>
-<h5 class="text-white text-center">$<%= @tour.price%></h5>
-<p class="text-white"><%= @tour.description %>
-</p>
-<p class="text-center">
-<%= link_to "Book this Tour", new_booking_path(:tour_id => @tour.id), class: 'btn btn-info' %>
-</p>
-</div>
-</div>
-<div class="row bg-dark">
-  <div class="col text-center">
-  <h1 class=" text-white">Itinerary</h1>
-  <i class=" text-white fas fa-arrow-down fa-2x my-2"></i>
-  </div>
-</div>
-<!--this is gallery of images/days, when clicked , more content with a map should collapse  -->
-    <div class="row db-dark">
-    <% @tour.tour_days.each do |day|%>
-
-      <div class="col bg-dark tour-card">
-    <div class="card bg-dark text-white">
-      <img class="card-img filter" src="<%= day.day_image_url %>" alt="<%=day.title %>">
-      <div class="card-img-overlay">
-          <h5 class="card-title">Day <%= day.id %></h5>
-        <h5 class="card-title"> <%= day.title %></h5>
+          <h1 class="text-white display-3 text-center">
+            <strong><%= @tour.title %></strong>
+          </h1>
+          <h2 class="text-white text-center"><%= @tour.tour_days.size %>
+            days
+          </h2>
+          <h5 class="text-white text-center">$<%= @tour.price%></h5>
+          <p class="text-white"><%= @tour.description %>
+          </p>
+          <p class="text-center">
+            <%= link_to "Book this Tour", new_booking_path(:tour_id => @tour.id), class: 'btn btn-success' %>
+              <%= link_to "Back to all Tours", tours_path, class: 'btn btn-info m-3' %>
+          </p>
+        </div>
       </div>
+      <div class="row bg-dark">
+        <div class="col text-center">
+          <h1 class=" text-white">Itinerary</h1>
+          <i class=" text-white fas fa-arrow-down fa-2x my-2"></i>
+        </div>
+      </div>
+      <!--this is gallery of images/days, when clicked , more content with a map should collapse -->
+      <div class="row db-dark">
+        <% @tour.tour_days.each do |day|%>
+
+          <div class="col bg-dark tour-card" data-tour-day-id="<%= day.id %>">
+            <div class="card bg-dark text-white">
+              <img class="card-img filter" src="<%= day.day_image_url %>" alt="<%=day.title %>">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Day
+                  <%= day.order %></h5>
+                <h5 class="card-title">
+                  <%= day.title %></h5>
+              </div>
+            </div>
+          </div>
+        <% end %>
+
+      </div>
+      <!--this is more content and a map for each particular day -->
+      <% @tour.tour_days.each do |day|%>
+        <div class="row db-dark maps-day tour-day-details" data-tour-day-id="<%= day.id %>" style="display: none">
+          <div class="col-md-4 bg-dark">
+            <h5 class="text-white">Day
+              <%= day.order %></h5>
+            <h5 class="text-white">
+              <%= day.title %></h5>
+
+            <p class="text-white">
+              <%= day.description %>
+            </p>
+
+          </div>
+          <div class="col-md-8 bg-dark ">
+            <h3 class="text-white text-center">This is the map of the day's location
+            </h3>
+            <div class="text-center">
+              <img src="https://via.placeholder.com/350x150" class="" alt="google maps">
+            </div>
+          </div>
+
+        </div>
+      <% end %>
+
     </div>
-      </div>
-    <% end %>
-
-</div>
-<!--this is more content and a map for each particular day  -->
-<div class="row db-dark maps-day"style="display:none;">
-<% @tour.tour_days.each do |day|%>
-
-  <div class="col-md-4 bg-dark">
-
-
-      <h5 class="text-white">Day <%= day.id %></h5>
-    <h5 class="text-white"> <%= day.title %></h5>
-
-    <p class="text-white"> <%= day.description %> </p>
-
-
   </div>
-  <div class="col-md-8 bg-dark ">
-    <h3 class="text-white text-center">This is the map of the day's location </h3>
-    <div class="text-center">
-<img src="https://via.placeholder.com/350x150" class=""alt="google maps">
-</div>
-  </div>
-<% end %>
-
-</div>
-
-</div>
-</div>
 </div>

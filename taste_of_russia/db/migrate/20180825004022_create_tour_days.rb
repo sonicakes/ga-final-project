@@ -5,6 +5,7 @@ class CreateTourDays < ActiveRecord::Migration[5.2]
       t.integer :tour_id
       t.string :description
       t.string :day_image_url
+      t.integer :order
       t.timestamps
     end
   end
