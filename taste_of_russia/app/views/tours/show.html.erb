@@ -57,14 +57,25 @@
             <p class="text-white">
               <%= day.description %>
             </p>
+            <p class="text-white" id="data">
 
+            </p>
+            <p class="text-white" id="weather">
+
+            </p>
+            <p class="text-white" id="temperature">
+
+            </p>
+<div id="icon">
+
+</div>
           </div>
           <div class="col-md-8 bg-dark ">
             <h3 class="text-white text-center">This is the map of the day's location
             </h3>
             <div class="text-center">
               <iframe width="500" height="300" src="https://maps.tilehosting.com/styles/basic/?key=SrArxJQiLFbJOqk6KVoH#10.17/<%= day.location %>/0/60"></iframe>
-      
+
             </div>
           </div>
 

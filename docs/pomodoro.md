@@ -88,4 +88,7 @@ Styled log in and all bookings form. Made lists of all feature and need to sacri
 ## Wed 29 Aug 8.35 am
 Addedlang/lot into 'location' row in seeds to display different maps for tour_days
 
+## Wed 29 Aug 9.10 am
+Started implementing OpenWeather API to get current weather for the city, but it only shows for the first tour_day, and no idea how to pass ruby variables into JS (title for city name).
+
 
