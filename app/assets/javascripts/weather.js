@@ -1,7 +1,7 @@
 function drawWeatherForLocation(tourDayId) {
 
   const tourDayTitle = $('#tour-day-title-' + tourDayId).html();
-  const url = 'http://api.openweathermap.org/data/2.5/weather?q=' + tourDayTitle + '&units=metric&appid=36a9dfc29f21bc67501304d573465e4f';
+  const url = 'https://api.openweathermap.org/data/2.5/weather?q=' + tourDayTitle + '&units=metric&appid=36a9dfc29f21bc67501304d573465e4f';
 
 
   $.getJSON(url, function(weatherInfo) {
