@@ -59,3 +59,8 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 end
+
+unless Rails.env.production?
+  ENV['PUBLISHABLE_KEY'] = 'pk_test_8oI9kBxizeWL3BUFJew0VXw5'
+  ENV['SECRET_KEY'] = 'sk_test_VPyTRvoZHvdtqLRsnrBzNJax'
+end
