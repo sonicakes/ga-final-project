@@ -95,5 +95,8 @@ Started implementing OpenWeather API to get current weather for the city, but it
 ## Wed 29 Aug 10.30 am
 Passed variable from Ruby to JS, for weather location. Dont know yet how to link it with data-id attributes. 
 
+## Wed 29 Aug 11.30 am
+Tried to implement weather icon to show for cities, but it doesnt show on View. ALthough url adress is correct when trying to go there to see the image from the console.
+
 
 
