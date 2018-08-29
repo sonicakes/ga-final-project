@@ -13,12 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-body {
-  font-family: 'Quicksand-Regular';
-  background-image: url(/assets/newPattern.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: rgba(0, 0, 0, 0.3);
-}
