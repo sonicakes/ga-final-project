@@ -14,3 +14,26 @@
 //= require jquery
 //= require activestorage
 //= require_tree .
+
+$(document).ready(function() {
+  console.log("ready!");
+
+  window.addEventListener("scroll", function() {
+    if (window.scrollY > 100) {
+      $("#topButton").show();
+      $("#navBr").addClass('scroll-down');
+    } else {
+      $("#topButton").hide();
+      $("#navBr").removeClass('scroll-down');
+    }
+  });
+
+  $('#topButton a').click(function(event) {
+    console.log('clicked');
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: 0
+    });
+    return false;
+  });
+});

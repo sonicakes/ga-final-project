@@ -1,12 +1,20 @@
 <!-- All Tours#index section -->
 <div id="menu-content" class="bg-none">
   <div class="overlay">
-  <div class="container">
+  <div class="container mt-5">
     <div class="row">
-      <div class="col">
-        <h3 class="text-center text-white p-3">
-          <strong>All Tours</strong>
-        </h3>
+      <div class="col-md-6 m-auto">
+        <div class="input-group my-5">
+  <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+    <option selected>Choose Price</option>
+    <option value="1">500-1000</option>
+    <option value="2">1000-4000</option>
+    <option value="3">4000-7000</option>
+  </select>
+  <div class="input-group-append">
+    <button class="btn btn-success" type="button">Search</button>
+  </div>
+</div>
       </div>
     </div>
     <div class="row">
@@ -14,12 +22,12 @@
         <table class="table table-hover table-light">
           <thead>
             <tr>
-              <th scope="col">Img</th>
-              <th scope="col">Tour Title</th>
+              <th scope="col" class="text-center">All Tours</th>
+              <th scope="col">Title</th>
               <th scope="col">Description</th>
               <th scope="col">Duration</th>
               <th scope="col">Price</th>
-              <th scope="col">Details and Book</th>
+              <th scope="col"></th>
             </tr>
           </thead>
           <tbody>

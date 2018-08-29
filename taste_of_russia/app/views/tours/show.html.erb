@@ -11,17 +11,18 @@
           </h1>
           <h2 class="text-white text-center">
             <% if @tour.tour_days.present? %>
-          <%= @tour.tour_days.size %> days
-          <% else %>
-          TBA
-          <% end %>
+              <%= @tour.tour_days.size %>
+              days
+            <% else %>
+              TBA
+            <% end %>
           </h2>
           <h5 class="text-white text-center">$<%= @tour.price%></h5>
           <p class="text-white"><%= @tour.description %>
           </p>
           <p class="text-center">
             <%= link_to "Book this Tour", new_booking_path(:tour_id => @tour.id), class: 'btn btn-success' %>
-              <%= link_to "Back to all Tours", tours_path, class: 'btn btn-info m-3' %>
+            <%= link_to "Back to all Tours", tours_path, class: 'btn btn-info m-3' %>
           </p>
         </div>
       </div>
@@ -55,35 +56,26 @@
           <div class="col-md-4 bg-dark">
             <h5 class="text-white">Day
               <%= day.order %></h5>
-            <h5 class="text-white">
-              <%= day.title %></h5>
-
+            <h5 class="text-white" id="tour-day-title-<%= day.id %>"><%= day.title %></h5>
             <p class="text-white">
               <%= day.description %>
             </p>
-            <p class="text-white" id="data"></p>
-            <p class="text-white" id="weather"></p>
-            <p class="text-white" id="temperature"></p>
-            <div class="mt-5"id="icon">
 
-            </div>
+            <p class="text-white" id="data-<%= day.id %>"></p>
+            <p class="text-white" id="weather-<%= day.id %>"></p>
+            <p class="text-white" id="temperature-<%= day.id %>"></p>
+            <div class="mt-5" id="icon-<%= day.id %>"></div>
           </div>
           <div class="col-md-8 bg-dark ">
             <h3 class="text-white text-center">This is the map of the day's location
             </h3>
             <div class="text-center">
               <iframe width="500" height="300" src="https://maps.tilehosting.com/styles/basic/?key=SrArxJQiLFbJOqk6KVoH#10.17/<%= day.location %>/0/60"></iframe>
-
             </div>
           </div>
-
         </div>
       <% end %>
 
     </div>
   </div>
 </div>
-<script type="text/javascript">
-//how to show tour day title based on their data-tour-ids???
-  var city = "<% if @tour.tour_days.present? %><%= @tour.tour_days.first.title %><% end %>";
-</script>
