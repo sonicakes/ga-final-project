@@ -80,11 +80,12 @@ tour7 = Tour.create(
   :image_url => "https://www.kyivpost.com/wp-content/uploads/2017/08/DJI_0022.2e16d0ba.fill-1200x795-800x520.jpg"
 )
 
-#tour 8: Golden Ring,4 Days
+#tour 8: Golden Ring,5 Days
 # tour 9: Sochi and Black sea, only 2 Days
 # tour 10: World Cup, Kazan, only 1 day
 # tour 11: Historic, 10 days
 # tour 12: From Russia with love, premium, 15 days! Includes 7 days from trans siberian, plus 8 days from Historic
+
 # Seed Tour Days for Tour 1
 tour_day1_1 = TourDay.create(
   :title => 'St Petersburg',
@@ -270,6 +271,137 @@ tour_day4_5 = TourDay.create(
   :day_image_url => 'http://photos.wikimapia.org/p/00/05/68/43/73_big.jpg'
 )
 tour4.tour_days << tour_day4_5
+
+# Seed Tour Days for Tour 6 (Caucasian District, 6 days)
+tour_day6_1 = TourDay.create(
+  :title => 'Grozny',
+  :description => 'Visit the Heart of Chechnya, Grozny, that has a Mosque with correspoding name.',
+  :order => 1,
+  :location => "43.3163/45.6824",
+  :day_image_url => "https://tropki.ru/sites/default/files/styles/article/public/previews/5580/mechet-serdce-chechni_0.jpg?itok=QqeSAnnv"
+)
+tour6.tour_days << tour_day6_1
+
+tour_day6_2 = TourDay.create(
+  :title => 'Mt Elbrus',
+  :description => 'Very nice views across the board and a must do for mountaineers',
+  :order => 2,
+  :location => '43.3499/42.4365',
+  :day_image_url => 'https://farm5.staticflickr.com/4152/4980132339_7f699000f6_b.jpg'
+)
+tour6.tour_days << tour_day6_2
+
+tour_day6_3 = TourDay.create(
+  :title => 'Pyatigorsk',
+  :description => 'Visit the monument to Lermontov at the Place of Duel',
+  :order => 3,
+  :location => '44.0513/43.0349',
+  :day_image_url => 'https://ak0.picdn.net/shutterstock/videos/29434240/thumb/3.jpg'
+
+)
+tour6.tour_days << tour_day6_3
+
+tour_day6_4 = TourDay.create(
+  :title => 'Essentuki',
+  :description => 'Enjoy natural mineral water and relax and world-famous health resort',
+  :order => 4,
+  :location => '44.0293/42.8505',
+  :day_image_url => 'https://media-cdn.tripadvisor.com/media/photo-s/06/94/49/85/caption.jpg'
+)
+tour6.tour_days << tour_day6_4
+
+tour_day6_5 = TourDay.create(
+  :title => 'Dombay',
+  :description => 'Experience Russian ski resort at its best',
+  :order => 5,
+  :location => '43.2915/41.6263',
+  :day_image_url => 'http://www.xtremespots.com/wp-content/uploads/2013/11/Dombay-Ski-Resort-Alpine-Skier.jpg'
+)
+tour6.tour_days << tour_day6_5
+
+tour_day6_6 = TourDay.create(
+  :title => 'Kislovodsk',
+  :description => 'Explore unique National Park in Russian beauty',
+  :order => 6,
+  :location => '43.9024/42.7284',
+  :day_image_url => 'http://sun-trek.ru/images/gid4.jpg'
+)
+tour6.tour_days << tour_day6_6
+
+
+# Seed Tour Days for Tour 7, Honeymoon in Crimea, 8 days
+
+tour_day7_1 = TourDay.create(
+  :title => 'Sevastopol',
+  :order => 1,
+  :location => '44.5890/33.5283',
+  :description => 'Visit the major Black Sea Port and largest city on Crimean Peninsula',
+  :day_image_url => 'http://gabisworld.com/data_images/top_cityes/sevastopol/sevastopol-06.jpg'
+)
+tour7.tour_days << tour_day7_1
+
+tour_day7_2 = TourDay.create(
+  :title => 'Simferopol',
+  :order => 2,
+  :location => '44.9514/34.1029',
+  :description => 'de facto capital of this new Russian land',
+  :day_image_url => 'https://discover-ukraine.info/uploads/i/i/4f83110a7be940.25094537.31.jpg'
+)
+tour7.tour_days << tour_day7_2
+
+tour_day7_3 = TourDay.create(
+  :title => 'Yalta',
+  :order => 3,
+  :location => '44.4962/34.1613',
+  :description => 'Beautiful resort city with spectacular views',
+  :day_image_url => 'https://static1.squarespace.com/static/57b9b98a29687f1ef5c622df/t/58120eca6a49630f40ba30d9/1477578448394/Beach+in+Yalta?format=1500w'
+)
+tour7.tour_days << tour_day7_3
+
+tour_day7_4 = TourDay.create(
+  :title => 'Kerch',
+  :order => 4,
+  :location => '45.3579/36.4592',
+  :description => 'Founded 2,600 years ago by Greeks, one of the most ancient cities in Crimea',
+  :day_image_url => 'https://cdn.britannica.com/s:700x450/16/124116-004-61C97951.jpg'
+)
+tour7.tour_days << tour_day7_4
+
+tour_day7_5 = TourDay.create(
+  :title => 'Alushta',
+  :order => 5,
+  :location => '44.6752/34.4034',
+  :description => 'Small coastal city, perfect for family time.',
+  :day_image_url => 'http://ukrainetrek.com/images/alushta-ukraine-city-views-9.jpg'
+)
+tour7.tour_days << tour_day7_5
+
+tour_day7_6 = TourDay.create(
+  :title => 'Feodosiya',
+  :order => 6,
+  :location => '45.0295/35.3768',
+  :description => 'Major port and resort on Black Sea',
+  :day_image_url => 'http://static.panoramio.com/photos/original/59463893.jpg'
+)
+tour7.tour_days << tour_day7_6
+
+tour_day7_7 = TourDay.create(
+  :title => 'Yevpatoria',
+  :order => 7,
+  :location => '45.1982/33.3479',
+  :description => "Unique crimean resort",
+  :day_image_url => 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Eupatoria_04-14_img06_sea_embankment.jpg/1200px-Eupatoria_04-14_img06_sea_embankment.jpg'
+)
+tour7.tour_days << tour_day7_7
+
+tour_day7_8 = TourDay.create(
+  :title => 'Sudak',
+  :order => 8,
+  :location => '44.8479/34.9727',
+  :description => "Small resort on the northern Black Sea, known for Genoese Fortress",
+  :day_image_url => 'https://s3.envato.com/files/220223527/preview.jpg'
+)
+tour7.tour_days << tour_day7_8
 
 
 # Seed Booking for Customer 1 and Tour 1, that is paid

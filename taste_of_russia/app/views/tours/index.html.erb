@@ -31,7 +31,13 @@
                   <%= link_to tour.title, tour %></td>
                 <td><%= tour.description.first(100) %>...<a href="<%= url_for tour %>">Read More</a></td>
 
-                <td><%= tour.tour_days.size %> days</td>
+                <td>
+                  <% if tour.tour_days.present? %>
+                  <%= tour.tour_days.size %> days
+                  <% else %>
+                  TBA
+                  <% end %>
+                </td>
                 <td>$<%= tour.price %></td>
                 <td> <%= link_to "Details and Booking", tour, class: "btn btn-info"  %></td>
               </tr>
