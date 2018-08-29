@@ -98,5 +98,7 @@ Passed variable from Ruby to JS, for weather location. Dont know yet how to link
 ## Wed 29 Aug 11.30 am
 Tried to implement weather icon to show for cities, but it doesnt show on View. ALthough url adress is correct when trying to go there to see the image from the console.
 
-
+## Wed 29 aug 12.45 pm
+Started writing more seeds data for future filtering
+Fixed TBA for tour_days if not present
 

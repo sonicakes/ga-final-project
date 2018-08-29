@@ -9,8 +9,12 @@
           <h1 class="text-white display-3 text-center">
             <strong><%= @tour.title %></strong>
           </h1>
-          <h2 class="text-white text-center"><%= @tour.tour_days.size %>
-            days
+          <h2 class="text-white text-center">
+            <% if @tour.tour_days.present? %>
+          <%= @tour.tour_days.size %> days
+          <% else %>
+          TBA
+          <% end %>
           </h2>
           <h5 class="text-white text-center">$<%= @tour.price%></h5>
           <p class="text-white"><%= @tour.description %>
@@ -81,5 +85,5 @@
 </div>
 <script type="text/javascript">
 //how to show tour day title based on their data-tour-ids???
-  var city = "<%= @tour.tour_days.first.title %>";
+  var city = "<% if @tour.tour_days.present? %><%= @tour.tour_days.first.title %><% end %>";
 </script>

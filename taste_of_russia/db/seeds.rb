@@ -56,7 +56,7 @@ tour4 = Tour.create(
   :image_url => "https://i.dailymail.co.uk/i/pix/2013/09/10/article-2416920-1BBDEB90000005DC-847_634x423.jpg"
 
 )
-
+# tour 5 doesnt have any days yet, so the show page for it should say "TBA"
 tour5 = Tour.create(
   :title => "Lake Baikal",
   :description => "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu",
@@ -65,6 +65,26 @@ tour5 = Tour.create(
 
 )
 
+# tour 6 will have 6 days
+tour6 = Tour.create(
+  :title => "Caucasian District‎",
+  :description => "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu",
+  :price => 3500,
+  :image_url => "http://russiatrek.org/blog/wp-content/uploads/2016/10/tsakhur-dagestan-caucasus-russia-6.jpg"
+)
+# tour 7 will have 8 days
+tour7 = Tour.create(
+  :title => "Honeymoon in Crimea",
+  :description => "They say it's Russia now, so you can spend honeymoon without getting international passport. Crimean Bridge is now open, since Msy 2018, so enjoy! (subject to political discussion. Annexation has not been accepted widely in the world.)",
+  :price => 10500,
+  :image_url => "https://www.kyivpost.com/wp-content/uploads/2017/08/DJI_0022.2e16d0ba.fill-1200x795-800x520.jpg"
+)
+
+#tour 8: Golden Ring,4 Days
+# tour 9: Sochi and Black sea, only 2 Days
+# tour 10: World Cup, Kazan, only 1 day
+# tour 11: Historic, 10 days
+# tour 12: From Russia with love, premium, 15 days! Includes 7 days from trans siberian, plus 8 days from Historic
 # Seed Tour Days for Tour 1
 tour_day1_1 = TourDay.create(
   :title => 'St Petersburg',
@@ -204,6 +224,53 @@ tour_day3_7 = TourDay.create(
   :day_image_url => 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Yaroslavl_Spaso-Preobrazhensky_Monastery_The_Church_of_Yaroslavl_Miracle-Workers_and_Transfiguration_Cathedral_IMG_0837_1725.jpg'
 )
 tour3.tour_days << tour_day3_7
+
+# seed tour days for Tour 4
+tour_day4_1 = TourDay.create(
+  :title => 'Chelyabinsk',
+  :order => 1,
+  :location => '55.1716/61.4152',
+  :description => 'Climb the mountains, that separate Europe from Asia',
+  :day_image_url => 'http://www.all-about-russia.ru/nature/mountain/ural_mountain/ural_mountain5.jpg'
+)
+tour4.tour_days << tour_day4_1
+
+tour_day4_2 = TourDay.create(
+  :title => 'Tyumen',
+  :order => 2,
+  :location => '57.1811/65.5050',
+  :description => 'visit famous Hot Springs!',
+  :day_image_url => 'https://media-cdn.tripadvisor.com/media/photo-s/05/af/61/41/hot-springs-tyumen-russia.jpg'
+)
+tour4.tour_days << tour_day4_2
+
+tour_day4_3 = TourDay.create(
+  :title => 'Orenburg',
+  :order => 3,
+  :location => '51.7866/55.0689',
+  :description => 'Enjoy the authentic Orenburg Shaul while practicing your knitting!',
+  :day_image_url => 'https://images-na.ssl-images-amazon.com/images/I/A12%2BewTuRAL._SY500_.jpg'
+)
+tour4.tour_days << tour_day4_3
+
+tour_day4_4 = TourDay.create(
+  :title => 'Ufa',
+  :order => 4,
+  :location => '54.9858/82.9153',
+  :description => 'Taste the most delicious Ural dumplings, or Pelmeni',
+  :day_image_url => 'http://russia-ic.com/img/culture_art/pelmeni_history.jpg'
+)
+tour4.tour_days << tour_day4_4
+
+tour_day4_5 = TourDay.create(
+  :title => 'Yekaterinburg',
+  :order => 5,
+  :location => '56.8383/60.5792',
+  :description => 'Visit the Church on Blood, where Nicholas II and his family were executed.',
+  :day_image_url => 'http://photos.wikimapia.org/p/00/05/68/43/73_big.jpg'
+)
+tour4.tour_days << tour_day4_5
+
 
 # Seed Booking for Customer 1 and Tour 1, that is paid
 booking1 = Booking.create(
