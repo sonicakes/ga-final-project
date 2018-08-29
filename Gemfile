@@ -38,12 +38,12 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'rspec-rails'
 gem 'shoulda-matchers'
 gem 'stripe'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'simplecov', :require => false, :group => :test
   gem 'rails-controller-testing'
-  gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 end
 
 group :development do
