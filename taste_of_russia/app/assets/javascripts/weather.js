@@ -1,5 +1,6 @@
 const url = 'http://api.openweathermap.org/data/2.5/weather?q=London&units=metric&appid=36a9dfc29f21bc67501304d573465e4f';
 $(document).ready(function() {
+  console.log(city);
   if (!$('#data').length) {
     // There is no map div on this page, so don't run code below
     return;

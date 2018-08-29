@@ -67,7 +67,7 @@ tour5 = Tour.create(
 
 # Seed Tour Days for Tour 1
 tour_day1_1 = TourDay.create(
-  :title => 'St Petersburg Musuem',
+  :title => 'St Petersburg',
   :description => 'Wander the Hermitage Museum',
   :order => 1,
   :location => "59.9393/30.3132",
@@ -85,7 +85,7 @@ tour_day1_2 = TourDay.create(
 tour1.tour_days << tour_day1_2
 
 tour_day1_3 = TourDay.create(
-  :title => 'St Petersburg to Moscow by train',
+  :title => 'St Petersburg',
   :description => 'Travel in one of the fastest trains with comfort',
   :order => 3,
   :location => '59.9343/30.3343',
@@ -94,7 +94,7 @@ tour_day1_3 = TourDay.create(
 tour1.tour_days << tour_day1_3
 
 tour_day1_4 = TourDay.create(
-  :title => 'Moscow, Red Square and CBD',
+  :title => 'Moscow',
   :description => 'Explore one of the most vibrant cities',
   :order => 4,
   :location => '55.7540/37.6194',
@@ -105,7 +105,7 @@ tour1.tour_days << tour_day1_4
 # Seed Tour Days for Tour 2
 
 tour_day2_1 = TourDay.create(
-  :title => 'Moscow, VDNH',
+  :title => 'Moscow',
   :description => 'Wander the big park of VDNH',
   :order => 1,
   :location => "55.8308/37.6285",
@@ -114,7 +114,7 @@ tour_day2_1 = TourDay.create(
 tour2.tour_days << tour_day2_1
 
 tour_day2_2 = TourDay.create(
-  :title => 'Visit to the most famous Russian gallery',
+  :title => 'Moscow',
   :order => 2,
   :location => '55.7413/37.6201',
   :description => 'The State Tretyakov Gallery is the national treasury of Russian fine art and contains more than 180,000 works of painting, sculpture and graphics.',
@@ -123,7 +123,7 @@ tour_day2_2 = TourDay.create(
 tour2.tour_days << tour_day2_2
 
 tour_day2_3 = TourDay.create(
-  :title => 'Voronezh city tour',
+  :title => 'Voronezh',
   :order => 3,
   :location => '51.6761/39.2080',
   :description => 'Explore young and modern city with million people',
@@ -152,7 +152,7 @@ tour_day3_1 = TourDay.create(
 tour3.tour_days << tour_day3_1
 
 tour_day3_2 = TourDay.create(
-  :title => 'Khabarovsk to Ulan-Ude',
+  :title => 'Khabarovsk',
   :order => 2,
   :location => '48.4808/135.0825',
   :description => 'train trip from Khabarovsk, the city on the Amur River',
@@ -161,7 +161,7 @@ tour_day3_2 = TourDay.create(
 tour3.tour_days << tour_day3_2
 
 tour_day3_3 = TourDay.create(
-  :title => 'Irkustsk to Krasnoyarsk',
+  :title => 'Irkustsk',
   :order => 3,
   :location => '52.2878/104.2629',
   :description => 'Irkustsk is famous for its numerous Orthodox churches',
@@ -170,7 +170,7 @@ tour_day3_3 = TourDay.create(
 tour3.tour_days << tour_day3_3
 
 tour_day3_4 = TourDay.create(
-  :title => 'Novosibirsk and Omsk',
+  :title => 'Novosibirsk',
   :order => 4,
   :location => '54.9858/82.9153',
   :description => 'Explore the third most populous city in Russia, rich and vibrant Novosibirsk',
@@ -197,7 +197,7 @@ tour_day3_6 = TourDay.create(
 tour3.tour_days << tour_day3_6
 
 tour_day3_7 = TourDay.create(
-  :title => 'Yaroslavl to Moscow',
+  :title => 'Yaroslavl',
   :order => 7,
   :location => '57.6368/39.8509',
   :description => "It's part of the Golden Ring group of ancient towns. On the grounds of the 12th-century Spaso-Preobrazhensky (Savior Transfiguration) Monastery",

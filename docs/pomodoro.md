@@ -92,3 +92,8 @@ Addedlang/lot into 'location' row in seeds to display different maps for tour_da
 Started implementing OpenWeather API to get current weather for the city, but it only shows for the first tour_day, and no idea how to pass ruby variables into JS (title for city name).
 
 
+## Wed 29 Aug 10.30 am
+Passed variable from Ruby to JS, for weather location. Dont know yet how to link it with data-id attributes. 
+
+
+
