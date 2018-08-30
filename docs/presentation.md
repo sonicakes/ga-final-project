@@ -14,6 +14,8 @@
 - google maps needs billing account, i used map tiler
 - look at work
 
+- i did the design myself
+
 # code
 
 - started with TDD
