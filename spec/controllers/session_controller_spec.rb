@@ -62,7 +62,7 @@ RSpec.describe SessionController, type: :controller do
     end
 
     it "should redirect to session#new - login form" do
-      expect(response).to redirect_to :action => :new
+      expect(response).to redirect_to root_path
     end
 
     it "current_user should be nil"

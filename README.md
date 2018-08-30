@@ -1,1 +1,1 @@
-# ga-final-project
+# GA-final-project: Taste of Russia

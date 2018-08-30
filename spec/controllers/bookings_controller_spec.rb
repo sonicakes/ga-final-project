@@ -2,8 +2,27 @@ require 'rails_helper'
 
 RSpec.describe BookingsController, type: :controller do
   describe 'GET index' do
+
     before do
-      get :index
+      tour = Tour.create(
+        title: 'St Petersburg to Moscow',
+        description: 'Foo',
+        price: 500
+      )
+
+      customer = Customer.create(
+        password: 'bob12345',
+        email: 'bob-smith@example.com'
+      )
+
+      booking = Booking.create(
+        payment_reference: '12345',
+        start_date: '2018-09-24',
+        tour_id: tour.id,
+        customer_id: customer.id
+      )
+
+      get(:index, session: { customer_id: customer.id})
     end
 
     it 'should pass @bookings object to the view' do
@@ -77,8 +96,8 @@ RSpec.describe BookingsController, type: :controller do
         post :create, params: {
           tour_id: tour,
           start_date: '2018-09-24',
-          customer_email: 'test@example.com',
-          customer_password: 'chicken'
+          stripeEmail: 'test@example.com',
+          stripeToken: 'abc123'
         }
       end
 
@@ -94,50 +113,32 @@ RSpec.describe BookingsController, type: :controller do
     end
 
     describe 'A booking with a new customer, but payment fails' do
-      before do
-        tour = Tour.create(
-          title: 'St Petersburg to Moscow',
-          description: 'Foo',
-          price: 500
-        )
-
-        post :create, params: {
-          tour_id: tour,
-          start_date: '2018-09-24',
-          customer_email: 'test@example.com',
-          customer_password: 'chicken'
-        }
-      end
-
-      it 'should redirect to booking#show' do
-        expect(response).to redirect_to Booking.last
-      end
-
-      it 'the booking payment reference should be empty' do
-        expect(Booking.last).to be_nil
-      end
+      it 'should redirect to booking#show'
+      it 'the booking payment reference should be empty'
       # TODO: the page should prompt them to try payment again
       # thanks for booking, but we couldn't process your payment...
     end
 
     describe 'A booking with a new customer, but customer fields are invalid' do
-      before do
-        tour = Tour.create(
+
+      let (:tour) {
+        Tour.create(
           title: 'St Petersburg to Moscow',
           description: 'Foo',
           price: 500
         )
+      }
 
+      before do
         post :create, params: {
-          tour_id: tour,
+          tour_id: tour.id,
           start_date: '2018-09-24',
-          customer_email: '',
-          customer_password: ''
+          stripeEmail: nil,
         }
       end
 
       it 'should redirect to booking#new' do
-        expect(response).to redirect_to action: :new
+        expect(response).to redirect_to(new_booking_path(tour_id: tour.id))
       end
 
       it 'should have a flash error message' do
@@ -145,8 +146,6 @@ RSpec.describe BookingsController, type: :controller do
         expect(flash[:error]).to match(/Sorry, we could not save your customer details./)
 
       end
-
-      # TODO: they should be shown an error message
     end
   end
 end

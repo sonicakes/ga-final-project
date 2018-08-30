@@ -14,14 +14,14 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-08-30T10:54:10+10:00">2018-08-30T10:54:10+10:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-08-30T19:24:32+10:00">2018-08-30T19:24:32+10:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">91.92%</span></span>
+    (<span class="covered_percent"><span class="green">94.48%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
@@ -32,9 +32,9 @@
   <a name="AllFiles"></a>
   <div>
     <b>58</b> files in total.
-    <b>421</b> relevant lines. 
-    <span class="green"><b>387</b> lines covered</span> and
-    <span class="red"><b>34</b> lines missed </span>
+    <b>417</b> relevant lines. 
+    <span class="green"><b>394</b> lines covered</span> and
+    <span class="red"><b>23</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -72,12 +72,12 @@
       
       <tr>
         <td class="strong"><a href="#c05d75b834b15c63fadeaa274d335441a54f2bb6" class="src_link" title="app/controllers/bookings_controller.rb">app/controllers/bookings_controller.rb</a></td>
-        <td class="red strong">52.78 %</td>
+        <td class="yellow strong">80.56 %</td>
         <td>83</td>
         <td>36</td>
-        <td>19</td>
-        <td>17</td>
-        <td>1.5</td>
+        <td>29</td>
+        <td>7</td>
+        <td>1.6</td>
       </tr>
       
       <tr>
@@ -432,11 +432,11 @@
       
       <tr>
         <td class="strong"><a href="#79f798f11d2faa60ae65e552bf04f4c3cd2b5f00" class="src_link" title="spec/controllers/bookings_controller_spec.rb">spec/controllers/bookings_controller_spec.rb</a></td>
-        <td class="green strong">97.96 %</td>
-        <td>152</td>
-        <td>49</td>
+        <td class="green strong">100.0 %</td>
+        <td>151</td>
         <td>48</td>
-        <td>1</td>
+        <td>48</td>
+        <td>0</td>
         <td>1.1</td>
       </tr>
       
@@ -613,9 +613,9 @@
       <tr>
         <td class="strong"><a href="#0f72545cc116d3a9063d5410f02933bf0e730acf" class="src_link" title="spec/models/tour_spec.rb">spec/models/tour_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>61</td>
-        <td>25</td>
-        <td>25</td>
+        <td>56</td>
+        <td>22</td>
+        <td>22</td>
         <td>0</td>
         <td>1.4</td>
       </tr>
@@ -1029,11 +1029,11 @@
         <div class="source_table" id="c05d75b834b15c63fadeaa274d335441a54f2bb6">
   <div class="header">
     <h3>app/controllers/bookings_controller.rb</h3>
-    <h4><span class="red">52.78 %</span> covered</h4>
+    <h4><span class="yellow">80.56 %</span> covered</h4>
     <div>
       <b>36</b> relevant lines. 
-      <span class="green"><b>19</b> lines covered</span> and
-      <span class="red"><b>17</b> lines missed.</span>
+      <span class="green"><b>29</b> lines covered</span> and
+      <span class="red"><b>7</b> lines missed.</span>
     </div>
   </div>
   
@@ -1220,8 +1220,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="31">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="4" data-linenumber="31">
+          <span class="hits">4</span>
           
           <code class="ruby">    customerPassword = SecureRandom.hex(8)</code>
         </li>
@@ -1232,20 +1232,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="33">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="4" data-linenumber="33">
+          <span class="hits">4</span>
           
           <code class="ruby">    customer = Customer.new</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="34">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="4" data-linenumber="34">
+          <span class="hits">4</span>
           
           <code class="ruby">    customer.email = params[:stripeEmail]</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="35">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="4" data-linenumber="35">
+          <span class="hits">4</span>
           
           <code class="ruby">    customer.password = customerPassword</code>
         </li>
@@ -1256,20 +1256,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="37">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="4" data-linenumber="37">
+          <span class="hits">4</span>
           
           <code class="ruby">    unless customer.save</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="38">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="2" data-linenumber="38">
+          <span class="hits">2</span>
           
           <code class="ruby">      flash[:error] = &#39;Sorry, we could not save your customer details.&#39;</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="39">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="2" data-linenumber="39">
+          <span class="hits">2</span>
           
           <code class="ruby">      redirect_to(new_booking_url(tour_id: params[:tour_id])) &amp;&amp; return</code>
         </li>
@@ -1292,8 +1292,8 @@
           <code class="ruby">    # Now that we have saved the customer, we set that customer as logged in</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="43">
-          
+        <li class="covered" data-hits="2" data-linenumber="43">
+          <span class="hits">2</span>
           
           <code class="ruby">    session[:customer_id] = customer.id</code>
         </li>
@@ -1358,38 +1358,38 @@
           <code class="ruby">    # if not, redirect booking#new form again</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="54">
-          
+        <li class="covered" data-hits="2" data-linenumber="54">
+          <span class="hits">2</span>
           
           <code class="ruby">    booking = Booking.new</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="55">
-          
+        <li class="covered" data-hits="2" data-linenumber="55">
+          <span class="hits">2</span>
           
           <code class="ruby">    booking.start_date = params[:start_date]</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="56">
-          
+        <li class="covered" data-hits="2" data-linenumber="56">
+          <span class="hits">2</span>
           
           <code class="ruby">    booking.status = &#39;placed&#39; # params[:status]</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="57">
-          
+        <li class="covered" data-hits="2" data-linenumber="57">
+          <span class="hits">2</span>
           
           <code class="ruby">    booking.tour_id = params[:tour_id]</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="58">
-          
+        <li class="covered" data-hits="2" data-linenumber="58">
+          <span class="hits">2</span>
           
           <code class="ruby">    booking.customer_id = customer.id</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="59">
-          
+        <li class="covered" data-hits="2" data-linenumber="59">
+          <span class="hits">2</span>
           
           <code class="ruby">    booking.payment_reference = params[:stripeToken]</code>
         </li>
@@ -1400,8 +1400,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="61">
-          
+        <li class="covered" data-hits="2" data-linenumber="61">
+          <span class="hits">2</span>
           
           <code class="ruby">    unless booking.save</code>
         </li>
@@ -1454,8 +1454,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="70">
-          
+        <li class="covered" data-hits="2" data-linenumber="70">
+          <span class="hits">2</span>
           
           <code class="ruby">    flash[:success] = &quot;Thank you for booking. Your booking ID is #{booking.id}. Your account has been created with your email (#{customer.email}) and password (#{customerPassword}).&quot;</code>
         </li>
@@ -1466,8 +1466,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="72">
-          
+        <li class="covered" data-hits="2" data-linenumber="72">
+          <span class="hits">2</span>
           
           <code class="ruby">    redirect_to booking</code>
         </li>
@@ -2850,7 +2850,7 @@
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">    validates :description, length: { maximum: 1000 }</code>
+          <code class="ruby">    validates :description, length: { maximum: 500 }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="18">
@@ -4545,11 +4545,11 @@
         <div class="source_table" id="79f798f11d2faa60ae65e552bf04f4c3cd2b5f00">
   <div class="header">
     <h3>spec/controllers/bookings_controller_spec.rb</h3>
-    <h4><span class="green">97.96 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>49</b> relevant lines. 
+      <b>48</b> relevant lines. 
       <span class="green"><b>48</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -4580,130 +4580,130 @@
           <code class="ruby">  describe &#39;GET index&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="5">
           
-          <code class="ruby">    before do</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">      get :index</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    it &#39;should pass @bookings object to the view&#39; do</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="10">
-          
-          
-          <code class="ruby">      expect(assigns(:bookings)).to be</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  describe &#39;GET new&#39; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
-          
           <code class="ruby">    before do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
+        <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
           <code class="ruby">      tour = Tour.create(</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">        title: &#39;St Petersburg to Moscow&#39;,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">        description: &#39;Foo&#39;,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">        price: 500</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">      )</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="21">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      get :new, params: { tour_id: tour.id }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="24">
+        <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &#39;should pass a @tour object to the view&#39; do</code>
+          <code class="ruby">      customer = Customer.create(</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">        password: &#39;bob12345&#39;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">        email: &#39;bob-smith@example.com&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">      )</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      booking = Booking.create(</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">        payment_reference: &#39;12345&#39;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">        start_date: &#39;2018-09-24&#39;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">        tour_id: tour.id,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">        customer_id: customer.id</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">      )</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(assigns(:tour)).to be</code>
+          <code class="ruby">      get(:index, session: { customer_id: customer.id})</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
@@ -4715,175 +4715,175 @@
         <li class="never" data-hits="" data-linenumber="27">
           
           
-          <code class="ruby">    # TODO: if the customer is logged in, this should be an object</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="28">
-          
-          
-          <code class="ruby">    # if its a brand new customer, it should be nil</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="29">
-          
-          
           <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should pass @bookings object to the view&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(assigns(:bookings)).to be</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="30">
           
           
-          <code class="ruby">    # it &#39;should pass a @customer variable to the view&#39; do</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="31">
           
           
-          <code class="ruby">    #     expect(assigns(:customer)).to be</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="32">
           
           
-          <code class="ruby">    # end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="33">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="34">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="35">
+        <li class="covered" data-hits="1" data-linenumber="33">
           <span class="hits">1</span>
           
-          <code class="ruby">  describe &#39;GET show&#39; do</code>
+          <code class="ruby">  describe &#39;GET new&#39; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
-          
-          
-          <code class="ruby">    # TODO: create a booking, customer, tour object for this to work</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="37">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="38">
+        <li class="covered" data-hits="1" data-linenumber="34">
           <span class="hits">1</span>
           
           <code class="ruby">    before do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="39">
+        <li class="covered" data-hits="1" data-linenumber="35">
           <span class="hits">1</span>
           
           <code class="ruby">      tour = Tour.create(</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="40">
+        <li class="never" data-hits="" data-linenumber="36">
           
           
           <code class="ruby">        title: &#39;St Petersburg to Moscow&#39;,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="41">
+        <li class="never" data-hits="" data-linenumber="37">
           
           
           <code class="ruby">        description: &#39;Foo&#39;,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="42">
+        <li class="never" data-hits="" data-linenumber="38">
           
           
           <code class="ruby">        price: 500</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="43">
+        <li class="never" data-hits="" data-linenumber="39">
           
           
           <code class="ruby">      )</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="44">
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      get :new, params: { tour_id: tour.id }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="45">
+        <li class="covered" data-hits="1" data-linenumber="43">
           <span class="hits">1</span>
           
-          <code class="ruby">      customer = Customer.create(</code>
+          <code class="ruby">    it &#39;should pass a @tour object to the view&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(assigns(:tour)).to be</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="46">
           
           
-          <code class="ruby">        password: &#39;bob12345&#39;,</code>
+          <code class="ruby">    # TODO: if the customer is logged in, this should be an object</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="47">
           
           
-          <code class="ruby">        email: &#39;bob-smith@example.com&#39;</code>
+          <code class="ruby">    # if its a brand new customer, it should be nil</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="48">
           
           
-          <code class="ruby">      )</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    # it &#39;should pass a @customer variable to the view&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="50">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="50">
           
-          <code class="ruby">      booking = Booking.create(</code>
+          
+          <code class="ruby">    #     expect(assigns(:customer)).to be</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="51">
           
           
-          <code class="ruby">        payment_reference: &#39;12345&#39;,</code>
+          <code class="ruby">    # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="52">
           
           
-          <code class="ruby">        start_date: &#39;2018-09-24&#39;,</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="53">
           
           
-          <code class="ruby">        tour_id: tour.id,</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="54">
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">        customer_id: customer.id</code>
+          <code class="ruby">  describe &#39;GET show&#39; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="55">
           
           
-          <code class="ruby">      )</code>
+          <code class="ruby">    # TODO: create a booking, customer, tour object for this to work</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="56">
@@ -4895,67 +4895,67 @@
         <li class="covered" data-hits="1" data-linenumber="57">
           <span class="hits">1</span>
           
-          <code class="ruby">      get :show, params: { id: booking.id }</code>
+          <code class="ruby">    before do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="58">
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">      tour = Tour.create(</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="59">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">        title: &#39;St Petersburg to Moscow&#39;,</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="60">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="60">
           
-          <code class="ruby">    it &#39;should pass @booking object to the view&#39; do</code>
+          
+          <code class="ruby">        description: &#39;Foo&#39;,</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="61">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="61">
           
-          <code class="ruby">      expect(assigns(:booking)).to be</code>
+          
+          <code class="ruby">        price: 500</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="62">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      )</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="63">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="64">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="65">
+        <li class="covered" data-hits="1" data-linenumber="64">
           <span class="hits">1</span>
           
-          <code class="ruby">  describe &#39;POST create&#39; do</code>
+          <code class="ruby">      customer = Customer.create(</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="66">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="65">
           
-          <code class="ruby">    describe &#39;A booking with an existing customer and successful payment&#39;</code>
+          
+          <code class="ruby">        password: &#39;bob12345&#39;,</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="67">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="66">
           
-          <code class="ruby">    describe &#39;A booking with an existing customer and payment fails&#39;</code>
+          
+          <code class="ruby">        email: &#39;bob-smith@example.com&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby">      )</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="68">
@@ -4967,157 +4967,157 @@
         <li class="covered" data-hits="1" data-linenumber="69">
           <span class="hits">1</span>
           
-          <code class="ruby">    describe &#39;A booking with a new customer and successful payment&#39; do</code>
+          <code class="ruby">      booking = Booking.create(</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="70">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="70">
           
-          <code class="ruby">      before do</code>
+          
+          <code class="ruby">        payment_reference: &#39;12345&#39;,</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="71">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="71">
           
-          <code class="ruby">        tour = Tour.create(</code>
+          
+          <code class="ruby">        start_date: &#39;2018-09-24&#39;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="72">
           
           
-          <code class="ruby">          title: &#39;St Petersburg to Moscow&#39;,</code>
+          <code class="ruby">        tour_id: tour.id,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="73">
           
           
-          <code class="ruby">          description: &#39;Foo&#39;,</code>
+          <code class="ruby">        customer_id: customer.id</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="74">
           
           
-          <code class="ruby">          price: 500</code>
+          <code class="ruby">      )</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="75">
           
           
-          <code class="ruby">        )</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="76">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="77">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="76">
+          <span class="hits">1</span>
           
-          <code class="ruby">        post :create, params: {</code>
+          <code class="ruby">      get :show, params: { id: booking.id }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="77">
+          
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="78">
           
           
-          <code class="ruby">          tour_id: tour,</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="79">
+        <li class="covered" data-hits="1" data-linenumber="79">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">          start_date: &#39;2018-09-24&#39;,</code>
+          <code class="ruby">    it &#39;should pass @booking object to the view&#39; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="80">
+        <li class="covered" data-hits="1" data-linenumber="80">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">          customer_email: &#39;test@example.com&#39;,</code>
+          <code class="ruby">      expect(assigns(:booking)).to be</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="81">
           
           
-          <code class="ruby">          customer_password: &#39;chicken&#39;</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="82">
           
           
-          <code class="ruby">        }</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="83">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="84">
+        <li class="covered" data-hits="1" data-linenumber="84">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">  describe &#39;POST create&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="85">
           <span class="hits">1</span>
           
-          <code class="ruby">      it &#39;should redirect to booking#show page&#39; do</code>
+          <code class="ruby">    describe &#39;A booking with an existing customer and successful payment&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="86">
           <span class="hits">1</span>
           
-          <code class="ruby">        expect(response).to redirect_to Booking.last</code>
+          <code class="ruby">    describe &#39;A booking with an existing customer and payment fails&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="87">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="88">
+        <li class="covered" data-hits="1" data-linenumber="88">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">    describe &#39;A booking with a new customer and successful payment&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="89">
           <span class="hits">1</span>
           
-          <code class="ruby">      it &#39;the booking payment reference should not be empty&#39; do</code>
+          <code class="ruby">      before do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="90">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="90">
+          <span class="hits">2</span>
           
-          <code class="ruby">        expect(Booking.last.payment_reference).not_to be_nil</code>
+          <code class="ruby">        tour = Tour.create(</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="91">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby">          title: &#39;St Petersburg to Moscow&#39;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="92">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">          description: &#39;Foo&#39;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="93">
           
           
-          <code class="ruby">      # TODO: it should show a success message - thanks for booking</code>
+          <code class="ruby">          price: 500</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="94">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">        )</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="95">
@@ -5126,46 +5126,46 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="96">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    describe &#39;A booking with a new customer, but payment fails&#39; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="97">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      before do</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="98">
+        <li class="covered" data-hits="2" data-linenumber="96">
           <span class="hits">2</span>
           
-          <code class="ruby">        tour = Tour.create(</code>
+          <code class="ruby">        post :create, params: {</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="97">
+          
+          
+          <code class="ruby">          tour_id: tour,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="98">
+          
+          
+          <code class="ruby">          start_date: &#39;2018-09-24&#39;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="99">
           
           
-          <code class="ruby">          title: &#39;St Petersburg to Moscow&#39;,</code>
+          <code class="ruby">          stripeEmail: &#39;test@example.com&#39;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="100">
           
           
-          <code class="ruby">          description: &#39;Foo&#39;,</code>
+          <code class="ruby">          stripeToken: &#39;abc123&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="101">
           
           
-          <code class="ruby">          price: 500</code>
+          <code class="ruby">        }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="102">
           
           
-          <code class="ruby">        )</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="103">
@@ -5174,40 +5174,40 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="104">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="104">
+          <span class="hits">1</span>
           
-          <code class="ruby">        post :create, params: {</code>
+          <code class="ruby">      it &#39;should redirect to booking#show page&#39; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="105">
+        <li class="covered" data-hits="1" data-linenumber="105">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">          tour_id: tour,</code>
+          <code class="ruby">        expect(response).to redirect_to Booking.last</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="106">
           
           
-          <code class="ruby">          start_date: &#39;2018-09-24&#39;,</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="107">
           
           
-          <code class="ruby">          customer_email: &#39;test@example.com&#39;,</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="108">
+        <li class="covered" data-hits="1" data-linenumber="108">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">          customer_password: &#39;chicken&#39;</code>
+          <code class="ruby">      it &#39;the booking payment reference should not be empty&#39; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="109">
+        <li class="covered" data-hits="1" data-linenumber="109">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">        }</code>
+          <code class="ruby">        expect(Booking.last.payment_reference).not_to be_nil</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="110">
@@ -5222,88 +5222,88 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="112">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="112">
           
-          <code class="ruby">      it &#39;should redirect to booking#show&#39; do</code>
+          
+          <code class="ruby">      # TODO: it should show a success message - thanks for booking</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="113">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        expect(response).to redirect_to Booking.last</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="114">
-          
-          
-          <code class="ruby">      end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="115">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="116">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      it &#39;the booking payment reference should be empty&#39; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="117">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        expect(Booking.last).to be_nil</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="118">
-          
-          
-          <code class="ruby">      end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="119">
-          
-          
-          <code class="ruby">      # TODO: the page should prompt them to try payment again</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="120">
-          
-          
-          <code class="ruby">      # thanks for booking, but we couldn&#39;t process your payment...</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="121">
+        <li class="never" data-hits="" data-linenumber="113">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="122">
+        <li class="never" data-hits="" data-linenumber="114">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="123">
+        <li class="covered" data-hits="1" data-linenumber="115">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    describe &#39;A booking with a new customer, but payment fails&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="116">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &#39;should redirect to booking#show&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="117">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &#39;the booking payment reference should be empty&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="118">
+          
+          
+          <code class="ruby">      # TODO: the page should prompt them to try payment again</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="119">
+          
+          
+          <code class="ruby">      # thanks for booking, but we couldn&#39;t process your payment...</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="120">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="121">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="122">
           <span class="hits">1</span>
           
           <code class="ruby">    describe &#39;A booking with a new customer, but customer fields are invalid&#39; do</code>
         </li>
       
+        <li class="never" data-hits="" data-linenumber="123">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
         <li class="covered" data-hits="1" data-linenumber="124">
           <span class="hits">1</span>
           
-          <code class="ruby">      before do</code>
+          <code class="ruby">      let (:tour) {</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="125">
           <span class="hits">2</span>
           
-          <code class="ruby">        tour = Tour.create(</code>
+          <code class="ruby">        Tour.create(</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="126">
@@ -5333,136 +5333,130 @@
         <li class="never" data-hits="" data-linenumber="130">
           
           
+          <code class="ruby">      }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="131">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="131">
+        <li class="covered" data-hits="1" data-linenumber="132">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      before do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="133">
           <span class="hits">2</span>
           
           <code class="ruby">        post :create, params: {</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="132">
-          
-          
-          <code class="ruby">          tour_id: tour,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="133">
-          
-          
-          <code class="ruby">          start_date: &#39;2018-09-24&#39;,</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="134">
           
           
-          <code class="ruby">          customer_email: &#39;&#39;,</code>
+          <code class="ruby">          tour_id: tour.id,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="135">
           
           
-          <code class="ruby">          customer_password: &#39;&#39;</code>
+          <code class="ruby">          start_date: &#39;2018-09-24&#39;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="136">
           
           
-          <code class="ruby">        }</code>
+          <code class="ruby">          stripeEmail: nil,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="137">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby">        }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="138">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">      end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="139">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="139">
           
-          <code class="ruby">      it &#39;should redirect to booking#new&#39; do</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="140">
           <span class="hits">1</span>
           
-          <code class="ruby">        expect(response).to redirect_to action: :new</code>
+          <code class="ruby">      it &#39;should redirect to booking#new&#39; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="141">
+        <li class="covered" data-hits="1" data-linenumber="141">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">      end</code>
+          <code class="ruby">        expect(response).to redirect_to(new_booking_path(tour_id: tour.id))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="142">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">      end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="143">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="143">
           
-          <code class="ruby">      it &#39;should have a flash error message&#39; do</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="144">
           <span class="hits">1</span>
           
-          <code class="ruby">        expect(flash[:error]).to be_present</code>
+          <code class="ruby">      it &#39;should have a flash error message&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="145">
           <span class="hits">1</span>
           
-          <code class="ruby">        expect(flash[:error]).to match(/Sorry, we could not save your customer details./)</code>
+          <code class="ruby">        expect(flash[:error]).to be_present</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="146">
+        <li class="covered" data-hits="1" data-linenumber="146">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">        expect(flash[:error]).to match(/Sorry, we could not save your customer details./)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="147">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="148">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="149">
           
           
-          <code class="ruby">      # TODO: they should be shown an error message</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="150">
           
           
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="151">
-          
-          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="152">
+        <li class="never" data-hits="" data-linenumber="151">
           
           
           <code class="ruby">end</code>
@@ -6128,7 +6122,7 @@
         <li class="covered" data-hits="1" data-linenumber="65">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(response).to redirect_to :action =&gt; :new</code>
+          <code class="ruby">      expect(response).to redirect_to root_path</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="66">
@@ -8897,8 +8891,8 @@
     <h3>spec/models/tour_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>25</b> relevant lines. 
-      <span class="green"><b>25</b> lines covered</span> and
+      <b>22</b> relevant lines. 
+      <span class="green"><b>22</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -9014,8 +9008,8 @@
           <code class="ruby">  subject {</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="19">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="7" data-linenumber="19">
+          <span class="hits">7</span>
           
           <code class="ruby">    described_class.new(</code>
         </li>
@@ -9197,37 +9191,37 @@
         <li class="never" data-hits="" data-linenumber="49">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="50">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="50">
           
-          <code class="ruby">  it &#39;is not valid when a description is longer than 1000 characters&#39; do</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="51">
           <span class="hits">1</span>
           
-          <code class="ruby">    subject.description = &#39;A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk. A nice trip from Moscow to Lipetsk.&#39;</code>
+          <code class="ruby">  describe &quot;Associations&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="52">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="52">
+          <span class="hits">2</span>
           
-          <code class="ruby">    expect(subject).to_not be_valid</code>
+          <code class="ruby">    it { should have_many :tour_days }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="53">
+        <li class="covered" data-hits="2" data-linenumber="53">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    it { should have_many :bookings }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="54">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="55">
@@ -9236,37 +9230,7 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="56">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  describe &quot;Associations&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="57">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    it { should have_many :tour_days }</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="58">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    it { should have_many :bookings }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="59">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="60">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="61">
+        <li class="never" data-hits="" data-linenumber="56">
           
           
           <code class="ruby">end</code>
