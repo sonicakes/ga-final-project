@@ -11,20 +11,20 @@ hidden form elementy tour_id = ?
 her is where we put the strip CC billing stuff
 
 button to cofnrim... book now -->
-<div id="booking-content" class="bg-none">
+<div id="booking-content" class="bg-none mt-5">
   <div class="overlay">
 <div class="container mt-5">
   <div class="row">
-    <div class="col-12 col-md-6 mx-auto">
+    <div class="col-12 col-md-6 mx-auto bg-dark">
       <h1 class="text-white">New Booking for: <strong><%= @tour.title %></strong></h1>
-              <h2 class="text-white"><%= @tour.price%></h2>
+              <h2 class="text-white">$<%= @tour.price%></h2>
     </div>
   </div>
 </div>
 <%= form_for @booking do |f| %>
         <div class="container">
            <div class="row">
-             <div class="col-12 col-md-6 mx-auto text-white">
+             <div class="col-12 col-md-6 mx-auto p-3 bg-dark text-white">
                <div class="form-group">
           <%= label_tag(:start_date, "Provide Start Date")%>
           <%= date_field_tag :start_date, Date.today.next_month, :autofocus => true, class: "form-control mb-2" %>

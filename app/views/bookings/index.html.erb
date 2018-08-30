@@ -1,13 +1,13 @@
 <div id="booking-all" class="bg-none">
   <div class="overlay">
-    <div class="container mt-5 bg-light">
+    <div class="container mt-5 ">
       <div class="row">
-        <div class="col-12 col-md-6 mx-auto">
+        <div class="col-12 col-md-6 mx-auto bg-light">
           <h1 class="mt-5">My Bookings</h1>
           <% @bookings.each do |booking| %>
             <ul class="border">
               <li>
-                Start date:<%= booking.start_date %></li>
+                Start date: <%= booking.start_date %></li>
               <li>
                 Payment reference:
                 <%= booking.payment_reference %></li>
@@ -15,16 +15,22 @@
                 Booking status:
                 <%= booking.status %></li>
               <li>
-                Customer id:
-                <%= booking.customer_id %></li>
-              <li>
-                Customer email:
-                <%= booking.customer.email %></li>
-              <li>
                 Tour being booked:
                 <%= booking.tour.title %></li>
+                <% if booking.tour.tour_days.present? %>
+              <li>
+                  <%= booking.tour.tour_days.size %>
+                days
+              <% else %>
+                TBA
+              <% end %>
+            </li>
+              <a href="<%= url_for booking.tour %>"><img src="<%= booking.tour.image_url %>" class="img-thumbnail img-fluid" alt="<%=booking.tour.title %>"></a></td>
+
             </ul>
           <% end %>
+
+
         </div>
       </div>
     </div>
