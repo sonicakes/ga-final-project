@@ -55,7 +55,7 @@ and even change some tests - because the functionality i wanted had changed
 - then go to tour model and comment out the minimum price validation
 
 - run rspec again, there should be 1 failure now
-- the model no longer prevents a price lesss than 500
+- the model no longer prevents a price less than 500
 - so the test successfully sets the price as 250
 - the test expects 250 to not be valid
 - so the test fails
@@ -66,7 +66,7 @@ i want to add:
 - Booking purchase email notification
 -  Maybe implement search in the evening
 - Maybe implement admin code in the evening
-- administrator managgement part
+- administrator management part
 - refunds
 - multiple person booking
 - search and filter tours
