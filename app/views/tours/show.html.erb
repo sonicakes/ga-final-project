@@ -6,7 +6,7 @@
 
         <div class="col-12 mx-auto mt-5">
 
-          <h1 class="text-white display-3 text-center">
+          <h1 class="text-white xdisplay-3 text-center">
             <strong><%= @tour.title %></strong>
           </h1>
           <h2 class="text-white text-center">
@@ -36,13 +36,13 @@
       <div class="row db-dark">
         <% @tour.tour_days.each do |day|%>
 
-          <div class="col bg-dark tour-card" data-tour-day-id="<%= day.id %>">
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3 bg-dark tour-card" data-tour-day-id="<%= day.id %>">
             <div class="card bg-dark text-white">
               <img class="card-img filter" src="<%= day.day_image_url %>" alt="<%=day.title %>">
               <div class="card-img-overlay">
-                <h5 style="font-size:1.5rem;" class="card-title">Day
+                <h5 style="" class="card-title">Day
                   <%= day.order %></h5>
-                <h5 style="font-size:0.9em;" class="card-title">
+                <h5 style="" class="card-title">
                   <%= day.title %></h5>
               </div>
             </div>
